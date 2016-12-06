@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>酒店预定</title>
+    <link rel="icon" href="./images/index/shortcut-icon.jpg" type="image/x-icon">
+    <script src="./js/jquery-3.1.0.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/move.js"></script>
+    <script src="./js/addEvent.js"></script>
+    <script src="./js/scroll.js"></script>
+    <link rel="stylesheet" href="./css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <link rel="stylesheet" href="./css/hotel.css" type="text/css">
+    <link rel="stylesheet" href="./css/Font-Awesome/css/font-awesome.min.css">
+</head>
+<body>
+
+
+<div class="head w">
+    <div class="head-left"></div>
+    <div class="head-center">
+    </div>
+    <div class="head-right">
+        <p><span class="icon-phone" style="color: orange;"></span> 全国客服电话</p>
+        <p>400-004-8888</p>
+        <div class="head-right-login">
+            <a href="./login.html" class="head-right-login-a-1">请登录<span>|</span></a>
+            <a href="./register.html" class="head-right-login-a-2">免费注册</a>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="banner">
+    <div class="banner-top">
+        <div class="banner-top-center w">
+            <ul class="clearfix" id="banner-top-center-ul">
+                <li class="permanent"><a href="./index.html">首页</a></li>
+                <li><a href="./route.html">精选路线</a></li>
+                <li><a href="./strategy.html">旅游攻略</a></li>
+                <li><a href="./travel-note.html">驴友游记</a></li>
+                <li class="banner-top-center-ul-li-5">
+                    <a href="#">关于我们</a>
+                    <div class="sub-menu" id="sub-menu-id">
+                        <div><a href="present.html">公司介绍</a></div>
+                        <div><a href="./contact.html">联系我们</a></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="banner-con">
+        <div class="banner-con-img" id="banner-con-img-id">
+            <ul>
+                <li><a href="#"><img src="./images/hotel/banner-1.jpg" alt=""></a></li>
+                <li><a href="#"><img src="./images/hotel/banner-2.jpg" alt=""></a></li>
+                <li><a href="#"><img src="./images/hotel/banner-3.jpg" alt=""></a></li>
+                <li><a href="#"><img src="./images/hotel/banner-4.jpg" alt=""></a></li>
+                <li><a href="#"><img src="./images/hotel/banner-5.jpg" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="banner-con-change" id="banner-con-change-id">
+            <img  class="banner-con-change-left" src="./images/index/left.png" alt="">
+            <img class="banner-con-change-right" src="./images/index/right.png" alt="">
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="vacation">
+    <h3>热门度假区</h3>
+    <div class="vacation-con w">
+        <div class="left">
+            <img class="current" src="./images/hotel/remen/img-1.jpg" width="285" height="320" alt="">
+            <img src="./images/hotel/remen/img-2.jpg" width="285" height="320" alt="">
+            <img src="./images/hotel/remen/img-3.jpg" width="285" height="320" alt="">
+            <img src="./images/hotel/remen/img-4.jpg" width="285" height="320" alt="">
+            <img src="./images/hotel/remen/img-5.jpg" width="285" height="320" alt="">
+            <img src="./images/hotel/remen/img-6.jpg" width="285" height="320" alt="">
+            <img src="./images/hotel/remen/img-7.jpg" width="285" height="320" alt="">
+
+            <ul id="vacation-left-ul-id">
+                <li class="current">迪士尼度假区<i></i></li>
+                <li>安吉度假区<i></i></li>
+                <li>恐龙度假区<i></i></li>
+                <li>鼓浪屿度假区<i></i></li>
+                <li>灵山度假区<i></i></li>
+                <li>天目湖度假区<i></i></li>
+                <li>三清山度假区<i></i></li>
+            </ul>
+        </div>
+
+        <div class="right" id="vacation-right-id">
+            <div class="sub-item current">
+                <h3>迪士尼度假</h3>
+                <div class="sub-item-head clearfix">
+                    <p>2016年6月16日盛大开幕，无数大孩子小孩子心目中唯一的乐园！</p>
+                    <a href="#">查看更多 &gt;</a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./images/hotel/remen/1-1.jpg" width="285" height="190" alt="">
+                        </a>
+                        <div class="sub-item-desc">
+                            <a href="#">迪士尼豪酒店</a>
+                            <span><i>¥</i> <b>850起</b></span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="./images/hotel/remen/1-2.jpg" width="285" height="190" alt="">
+                        </a>
+                        <div class="sub-item-desc">
+                            <a href="#">迪士尼豪酒店</a>
+                            <span><i>¥</i> <b>850起</b></span>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <a href="#">
+                            <img src="./images/hotel/remen/1-3.jpg" width="285" height="190" alt="">
+                        </a>
+                        <div class="sub-item-desc">
+                            <a href="#">安吉JW万豪酒店</a>
+                            <span><i>¥</i> <b>850起</b></span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+
+            <div class="sub-item">
+                <h3>安吉度假</h3>
+                <div class="sub-item-head clearfix">
+                    <p>国家首个生态县，被誉为气净、水净、土净的“三净之地”</p>
+                    <a href="#">查看更多 &gt;</a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./images/hotel/remen/2-1.jpg" width="285" height="190" alt="">
+                        </a>
+                        <div class="sub-item-desc">
+                            <a href="#">安吉JW万豪酒店</a>
+                            <span><i>¥</i> <b>850起</b></span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="./images/hotel/remen/2-2.jpg" width="285" height="190" alt="">
+                        </a>
+                        <div class="sub-item-desc">
+                            <a href="#">安吉JW万豪酒店</a>
+                            <span><i>¥</i> <b>850起</b></span>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <a href="#">
+                            <img src="./images/hotel/remen/2-3.jpg" width="285" height="190" alt="">
+                        </a>
+                        <div class="sub-item-desc">
+                            <a href="#">安吉JW万豪酒店</a>
+                            <span><i>¥</i> <b>850起</b></span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+
+            <div class="sub-item">
+                <h3>恐龙度假</h3>
+                <div class="sub-item-head clearfix">
+                    <p>国家首个生态县，被誉为气净、水净、土净的“三净之地”</p>
+                    <a href="#">查看更多 &gt;</a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./images/hotel/remen/3-1.jpg" width="285" height="190" alt="">
+                        </a>
+                        <div class="sub-item-desc">
+                            <a href="#">安吉JW万豪酒店</a>
+                            <span><i>¥</i> <b>850起</b></span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="./images/hotel/remen/3-2.jpg" width="285" height="190" alt="">
+                        </a>
+                        <div class="sub-item-desc">
+                            <a href="#">安吉JW万豪酒店</a>
+                            <span><i>¥</i> <b>850起</b></span>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <a href="#">
+                            <img src="./images/hotel/remen/3-3.jpg" width="285" height="190" alt="">
+                        </a>
+                        <div class="sub-item-desc">
+                            <a href="#">安吉JW万豪酒店</a>
+                            <span><i>¥</i> <b>850起</b></span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+
+            <div class="sub-item">
+                <h3>鼓浪屿度假</h3>
+                <div class="sub-item-head clearfix">
+                    <p>国家首个生态县，被誉为气净、水净、土净的“三净之地”</p>
+                    <a href="#">查看更多 &gt;</a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./images/hotel/remen/4-1.jpg" width="285" height="190" alt="">
+                        </a>
+                        <div class="sub-item-desc">
+                            <a href="#">安吉JW万豪酒店</a>
+                            <span><i>¥</i> <b>850起</b></span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="./images/hotel/remen/4-2.jpg" width="285" height="190" alt="">
+                        </a>
+                        <div class="sub-item-desc">
+                            <a href="#">安吉JW万豪酒店</a>
+                            <span><i>¥</i> <b>850起</b></span>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <a href="#">
+                            <img src="./images/hotel/remen/4-3.jpg" width="285" height="190" alt="">
+                        </a>
+                        <div class="sub-item-desc">
+                            <a href="#">安吉JW万豪酒店</a>
+                            <span><i>¥</i> <b>850起</b></span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+
+            <div class="sub-item">
+                <h3>灵山度假</h3>
+                <div class="sub-item-head clearfix">
+                    <p>国家首个生态县，被誉为气净、水净、土净的“三净之地”</p>
+                    <a href="#">查看更多 &gt;</a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./images/hotel/remen/5-1.jpg" width="285" height="190" alt="">
+                        </a>
+                        <div class="sub-item-desc">
+                            <a href="#">安吉JW万豪酒店</a>
+                            <span><i>¥</i> <b>850起</b></span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="./images/hotel/remen/5-2.jpg" width="285" height="190" alt="">
+                        </a>
+                        <div class="sub-item-desc">
+                            <a href="#">安吉JW万豪酒店</a>
+                            <span><i>¥</i> <b>850起</b></span>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <a href="#">
+                            <img src="./images/hotel/remen/5-3.jpg" width="285" height="190" alt="">
+                        </a>
+                        <div class="sub-item-desc">
+                            <a href="#">安吉JW万豪酒店</a>
+                            <span><i>¥</i> <b>850起</b></span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+
+
+            <div class="sub-item">
+                <h3>天目湖度假</h3>
+                <div class="sub-item-head clearfix">
+                    <p>国家首个生态县，被誉为气净、水净、土净的“三净之地”</p>
+                    <a href="#">查看更多 &gt;</a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./images/hotel/remen/6-1.jpg" width="285" height="190" alt="">
+                        </a>
+                        <div class="sub-item-desc">
+                            <a href="#">安吉JW万豪酒店</a>
+                            <span><i>¥</i> <b>850起</b></span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="./images/hotel/remen/6-2.jpg" width="285" height="190" alt="">
+                        </a>
+                        <div class="sub-item-desc">
+                            <a href="#">安吉JW万豪酒店</a>
+                            <span><i>¥</i> <b>850起</b></span>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <a href="#">
+                            <img src="./images/hotel/remen/6-3.jpg" width="285" height="190" alt="">
+                        </a>
+                        <div class="sub-item-desc">
+                            <a href="#">安吉JW万豪酒店</a>
+                            <span><i>¥</i> <b>850起</b></span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+
+            <div class="sub-item">
+                <h3>三清山度假</h3>
+                <div class="sub-item-head clearfix">
+                    <p>国家首个生态县，被誉为气净、水净、土净的“三净之地”</p>
+                    <a href="#">查看更多 &gt;</a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./images/hotel/remen/7-1.jpg" width="285" height="190" alt="">
+                        </a>
+                        <div class="sub-item-desc">
+                            <a href="#">安吉JW万豪酒店</a>
+                            <span><i>¥</i> <b>850起</b></span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="./images/hotel/remen/7-2.jpg" width="285" height="190" alt="">
+                        </a>
+                        <div class="sub-item-desc">
+                            <a href="#">安吉JW万豪酒店</a>
+                            <span><i>¥</i> <b>850起</b></span>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <a href="#">
+                            <img src="./images/hotel/remen/7-3.jpg" width="285" height="190" alt="">
+                        </a>
+                        <div class="sub-item-desc">
+                            <a href="#">安吉JW万豪酒店</a>
+                            <span><i>¥</i> <b>850起</b></span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<div class="hotel w">
+    <h3>特价酒店</h3>
+    <ul class="hotel-head" id="hotel-head-id">
+        <li class="current">上海</li>
+        <li>常州</li>
+        <li>杭州</li>
+        <li>苏州</li>
+        <li>宁波</li>
+        <li>黄山</li>
+        <li>厦门</li>
+    </ul>
+
+    <div class="hotel-con" id="hotel-con-id">
+
+        <div class="common-sub-item current">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/tejia/1-1.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/tejia/1-2.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/tejia/1-3.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/tejia/1-4.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="common-sub-item">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/tejia/2-1.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/tejia/2-2.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/tejia/2-3.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/tejia/2-4.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="common-sub-item">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/tejia/3-1.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/tejia/3-2.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/tejia/3-3.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/tejia/3-4.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="common-sub-item">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/tejia/4-1.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/tejia/4-2.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/tejia/4-3.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/tejia/4-4.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="common-sub-item">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/tejia/5-1.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/tejia/5-2.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/tejia/5-3.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/tejia/5-4.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="common-sub-item">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/tejia/6-1.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/tejia/6-2.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/tejia/6-3.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/tejia/6-4.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="common-sub-item">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/tejia/7-1.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/tejia/7-2.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/tejia/7-3.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/tejia/7-4.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+<div class="theme">
+    <h3>主题推荐</h3>
+    <ul class="theme-head w" id="theme-head-id">
+       <li class="current">
+           <img class="one-img" src="./images/hotel/theme/head-1-1.jpg" alt="">
+           <img class="two-img" src="./images/hotel/theme/head-1-2.jpg" alt="">
+           <p>城市精品</p>
+       </li>
+
+        <li>
+            <img class="one-img" src="./images/hotel/theme/head-2-1.jpg" alt="">
+            <img class="two-img" src="./images/hotel/theme/head-2-2.jpg" alt="">
+            <p>旅游亲子</p>
+        </li>
+
+        <li>
+            <img class="one-img" src="./images/hotel/theme/head-3-1.jpg" alt="">
+            <img class="two-img" src="./images/hotel/theme/head-3-2.jpg" alt="">
+            <p>市郊旅游</p>
+        </li>
+
+        <li>
+            <img class="one-img" src="./images/hotel/theme/head-4-1.jpg" alt="">
+            <img class="two-img" src="./images/hotel/theme/head-4-2.jpg" alt="">
+            <p>名山景胜</p>
+        </li>
+
+        <li>
+            <img class="one-img" src="./images/hotel/theme/head-5-1.jpg" alt="">
+            <img class="two-img" src="./images/hotel/theme/head-5-2.jpg" alt="">
+            <p>酒店控</p>
+        </li>
+
+    </ul>
+
+
+    <div class="theme-con w" id="theme-con-id">
+
+        <div class="common-sub-item current">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/one/1.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/one/2.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/one/3.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/one/4.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/one/5.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/one/6.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/one/7.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/one/8.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="common-sub-item ">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/two/1.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/two/2.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/two/3.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/two/4.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/two/5.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/two/6.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/two/7.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/two/8.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="common-sub-item ">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/three/1.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/three/2.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/three/3.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/three/4.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/three/5.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/three/6.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/three/7.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/three/8.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="common-sub-item ">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/four/1.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/four/2.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/four/3.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/four/4.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/four/5.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/four/6.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/four/7.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/four/8.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="common-sub-item ">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/five/1.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/five/2.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/five/3.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/five/4.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/five/5.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/five/6.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/five/7.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/hotel/theme/five/8.jpg" width="285" height="190" alt="">
+                    </a>
+                    <div class="sub-item-desc">
+                        <a href="#">安吉JW万豪酒店</a>
+                        <span><i>¥</i> <b>850起</b></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="cooperation">
+    <h3>合作品牌</h3>
+    <div class="brand w">
+        <span class="brand-left"></span>
+        <span class="brand-right"></span>
+        <ul>
+            <li><a href="http://www.kaiyuanhotels.com/m/hotel/index.htm"><img src="./images/hotel/cooperation/1.jpg" alt=""></a></li>
+            <li><a href="http://www.kaiyuanhotels.com/m/hotel/index.htm"><img src="./images/hotel/cooperation/2.jpg" alt=""></a></li>
+            <li><a href="http://www.kaiyuanhotels.com/m/hotel/index.htm"><img src="./images/hotel/cooperation/3.jpg" alt=""></a></li>
+            <li><a href="http://www.kaiyuanhotels.com/m/hotel/index.htm"><img src="./images/hotel/cooperation/4.jpg" alt=""></a></li>
+            <li><a href="http://www.kaiyuanhotels.com/m/hotel/index.htm"><img src="./images/hotel/cooperation/5.jpg" alt=""></a></li>
+            <li><a href="http://www.kaiyuanhotels.com/m/hotel/index.htm"><img src="./images/hotel/cooperation/6.jpg" alt=""></a></li>
+            <li><a href="http://www.kaiyuanhotels.com/m/hotel/index.htm"><img src="./images/hotel/cooperation/7.jpg" alt=""></a></li>
+            <li><a href="http://www.kaiyuanhotels.com/m/hotel/index.htm"><img src="./images/hotel/cooperation/8.jpg" alt=""></a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="service">
+
+    <ul>
+        <li>
+            <span class="service-one"></span>
+            <p>
+                <strong>价格保证</strong><br/>
+                同类产品,保证低价
+            </p>
+        </li>
+        <li>
+            <span class="service-two"></span>
+            <p>
+                <strong>退订保障</strong><br/>
+                因特殊情况影响出行，保证退订
+            </p>
+        </li>
+        <li>
+            <span class="service-three"></span>
+            <p>
+                <strong>救援保障</strong><br/>
+                旅途中遇意外情况，保证援助
+            </p>
+        </li>
+        <li>
+            <span class="service-four"></span>
+            <p>
+                <strong>7x24小时服务</strong><br/>
+                快速响应，全年无休
+            </p>
+        </li>
+    </ul>
+</div>
+
+
+<div class="foot">
+    <div class="foot-bottom">
+        <div class="foot-bottom-one">
+            <span></span>
+        </div>
+        <div class="foot-bottom-two">
+            <p><span>Tourism</span> Design</p>
+            <p>
+                欢迎来到我们的网站，找到你喜欢的旅程！祝你有一个美好的旅途
+            </p>
+        </div>
+        <div class="foot-bottom-three">
+            <span></span>
+        </div>
+        <div class="foot-bottom-four">
+            <p>
+                <a href="#">首页</a>
+                <a href="#">关于我们</a>
+                <a href="#">联系我们</a>
+            </p>
+            <p>©2016 个人展示 版权所有</p>
+            <p>
+                <a href="#">手机版</a> |
+                <a href="#">本站使用凡科建站搭建</a> |
+                <a href="#">管理登录</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+    window.onload = function (e) {
+        /*
+         * 导航栏的移动
+         * */
+        (function () {
+            var navUl = document.getElementById("banner-top-center-ul");
+            var navLis = navUl.getElementsByTagName("li");
+
+            navUl.onmouseout = function (e) {
+                for (var j = 0; j < navLis.length; j++) {
+                    navLis[j].classList.remove("current");
+                }
+            };
+
+            for (var i = 0; i < navLis.length; i++) {
+                navLis[i].onmouseover = function (event) {
+                    for (var j = 0; j < navLis.length; j++) {
+                        navLis[j].classList.remove("current");
+                    }
+                    this.classList.add("current");
+                }
+            }
+
+            var subMenu = document.getElementById("sub-menu-id");
+            for (var i = 0; i < subMenu.children.length; i++) {
+                subMenu.children[i].onmouseover = function (e) {
+                    for (var j = 0; j < subMenu.children.length; j++) {
+                        subMenu.children[j].classList.remove("current");
+                    }
+                    this.classList.add("current");
+                };
+            }
+        })();
+        /*
+         * 图片的轮播
+         * */
+        (function(){
+            var bannerImgs = document.getElementById("banner-con-img-id");
+            var bannerCon = bannerImgs.parentNode;
+            var changeImgs
+                    = bannerImgs.getElementsByTagName("li");
+            changeImgs[0].classList.add("current");
+
+            var changeBox = document.getElementById("banner-con-change-id");
+            var arrow = changeBox.children;
+            var current = 0;
+            var timer = null;
+
+            //自动播放
+            autoPlay();
+
+
+            addEvent(arrow[0], "click", leftHandler);
+            addEvent(arrow[1], "click", rightHandler);
+
+            addEvent(changeBox, "mouseover", function(){
+                clearInterval(timer);
+            });
+
+            addEvent(changeBox, "mouseout", function(){
+                autoPlay();
+            });
+
+
+            function autoPlay(){
+                clearInterval(timer);
+                timer = setInterval(function(){
+                            current++;
+                            current = current > changeImgs.length - 1 ? 0 : current;
+
+//                    console.log("autoplay -----", current);
+
+                            for (var i = 0; i < changeImgs.length; i++){
+                                changeImgs[i].classList.remove("current");
+                            }
+
+                            changeImgs[current].classList.add("current");
+
+                        },
+
+                        2000);
+                return;
+            }
+
+
+            function leftHandler(e){
+                current--;
+                if (current < 0){
+                    current = 0;
+                    return;
+                }
+
+                console.log("left----", current);
+
+                for (var i = 0; i < changeImgs.length; i++){
+                    changeImgs[i].classList.remove("current");
+//                    $(changeImgs[i]).fadeOut(300);
+                }
+
+                changeImgs[current].classList.add("current");
+//                $(changeImgs[current]).fadeIn(300);
+            }
+
+            function rightHandler(e){
+                current++;
+                if (current > changeImgs.length - 1){
+                    current = changeImgs.length - 1;
+                    return;
+                }
+
+                console.log("right----", current);
+
+                for (var i = 0; i < changeImgs.length; i++){
+                    changeImgs[i].classList.remove("current");
+//                    $(changeImgs[i]).fadeOut(300);
+                }
+                changeImgs[current].classList.add("current");
+//                $(changeImgs[current]).fadeIn(300);
+            }
+        })();
+
+
+        //通用的tab点击切换函数
+        /*
+         * lis: tab标签数组
+         * items: 对应选项数组
+         * */
+        function showTab (lis, items) {
+
+
+            for (var i = 0; i < lis.length; i++) {
+                lis[i].index = i;
+                lis[i].onmouseover = function (e) {
+                    for (var j = 0; j < lis.length; j++) {
+                        lis[j].classList.remove("current");
+                        items[j].classList.remove("current");
+                    }
+
+                    this.classList.add("current");
+                    items[this.index].classList.add("current");
+                };
+            }
+        }
+
+
+        (function () {
+            var lis = document.getElementById("vacation-left-ul-id").children;
+            var items = document.getElementById("vacation-right-id").children;
+            showTab(lis, items);
+
+            lis = document.getElementById("hotel-head-id").children;
+            items = document.getElementById("hotel-con-id").children;
+            showTab(lis, items);
+
+            lis = document.getElementById("theme-head-id").children;
+            items = document.getElementById("theme-con-id").children;
+            showTab(lis, items);
+
+
+        })();
+
+
+
+    };
+</script>
+</body>
+</html>

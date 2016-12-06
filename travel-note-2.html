@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>驴友游记</title>
+    <link rel="icon" href="./images/index/shortcut-icon.jpg" type="image/x-icon">
+    <script src="./js/jquery-3.1.0.min.js"></script>
+    <script src="./js/move.js"></script>
+    <script src="./js/addEvent.js"></script>
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <link rel="stylesheet" href="./css/travel-note.css" type="text/css">
+    <link rel="stylesheet" href="./css/Font-Awesome/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="head w">
+    <div class="head-left"></div>
+    <div class="head-center">
+    </div>
+    <div class="head-right">
+        <p><span class="icon-phone" style="color: orange;"></span> 全国客服电话</p>
+        <p>400-004-8888</p>
+        <div class="head-right-login">
+            <a href="./login.html" class="head-right-login-a-1">请登录<span>|</span></a>
+            <a href="./register.html" class="head-right-login-a-2">免费注册</a>
+        </div>
+    </div>
+</div>
+
+<div class="banner">
+    <div class="banner-top">
+        <div class="banner-top-center w">
+            <ul class="clearfix" id="banner-top-center-ul">
+                <li><a href="./index.html">首页</a></li>
+                <li><a href="./route.html">精选路线</a></li>
+                <li><a href="./strategy.html">旅游攻略</a></li>
+                <li class="permanent"><a href="./travel-note.html">驴友游记</a></li>
+                <li class="banner-top-center-ul-li-5">
+                    <a href="#">关于我们</a>
+                    <div class="sub-menu" id="sub-menu-id">
+                        <div><a href="present.html">公司介绍</a></div>
+                        <div><a href="./contact.html">联系我们</a></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner-img">
+        <img src="./images/travel-note/banner.jpg" alt="">
+    </div>
+</div>
+
+
+<!--  内容应根据后台生成
+    预定一个页面最多显示4个游记，多余的部分可以点击上下页来切换,
+    后台可以提前根据游记的个数生成对应的页面， 在页面加载时，可以请求后台总的游记页面总数
+    然后，自动生成可点击的页数
+-->
+
+<div class="road w story">
+    <div class="road-head">
+        游记 / <span>爱旅游</span>
+        <p class="road-head-center"></p>
+        <a href="./write-note.html" class="write-note">我要写游记</a>
+    </div>
+
+    <div class="story-items">
+
+        <div class="story-item">
+            <div class="story-item-left">
+                <a href="#">
+                    <img src="./images/travel-note/story-1.png" alt="">
+                </a>
+            </div>
+            <div class="story-item-center">
+                <h3>
+                    <a href="#">嵊泗小时光 流浪在泗礁本岛</a>
+                </h3>
+                <p>
+                    许阴雨连绵会带来灰度的海与天，像小孩子哭丧着的脸，但在热情满满的大晴天，它恢复了湛蓝与澄澈，这是原本的面貌，也是...
+                </p>
+                <div>[游记]</div>
+            </div>
+            <div class="story-item-right">
+                <p>2020-08-08</p>
+            </div>
+        </div>
+
+
+        <div class="story-item">
+            <div class="story-item-left">
+                <a href="#">
+                    <img src="./images/travel-note/story-1.png" alt="">
+                </a>
+            </div>
+            <div class="story-item-center">
+                <h3>
+                    <a href="#">嵊泗小时光 流浪在泗礁本岛</a>
+                </h3>
+                <p>
+                    许阴雨连绵会带来灰度的海与天，像小孩子哭丧着的脸，但在热情满满的大晴天，它恢复了湛蓝与澄澈，这是原本的面貌，也是...
+                </p>
+                <div>[游记]</div>
+            </div>
+            <div class="story-item-right">
+                <p>2020-08-08</p>
+            </div>
+        </div>
+
+
+        <div class="story-item">
+            <div class="story-item-left">
+                <a href="#">
+                    <img src="./images/travel-note/story-1.png" alt="">
+                </a>
+            </div>
+            <div class="story-item-center">
+                <h3>
+                    <a href="#">嵊泗小时光 流浪在泗礁本岛</a>
+                </h3>
+                <p>
+                    许阴雨连绵会带来灰度的海与天，像小孩子哭丧着的脸，但在热情满满的大晴天，它恢复了湛蓝与澄澈，这是原本的面貌，也是...
+                </p>
+                <div>[游记]</div>
+            </div>
+            <div class="story-item-right">
+                <p>2020-08-08</p>
+            </div>
+        </div>
+
+
+        <div class="story-item">
+            <div class="story-item-left">
+                <a href="#">
+                    <img src="./images/travel-note/story-1.png" alt="">
+                </a>
+            </div>
+            <div class="story-item-center">
+                <h3>
+                    <a href="#">嵊泗小时光 流浪在泗礁本岛</a>
+                </h3>
+                <p>
+                    许阴雨连绵会带来灰度的海与天，像小孩子哭丧着的脸，但在热情满满的大晴天，它恢复了湛蓝与澄澈，这是原本的面貌，也是...
+                </p>
+                <div>[游记]</div>
+            </div>
+            <div class="story-item-right">
+                <p>2020-08-08</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="story-page" id="story-page-id">
+        <i class="story-page-pre">上一页</i>
+<!--        <span class="story-page-current">1</span>
+        <span>2</span>-->
+        <i class="story-page-next">下一页</i>
+    </div>
+
+</div>
+
+
+<div class="foot">
+    <div class="foot-bottom">
+        <div class="foot-bottom-one">
+            <span></span>
+        </div>
+        <div class="foot-bottom-two">
+            <p><span>Tourism</span> Design</p>
+            <p>
+                欢迎来到我们的网站，找到你喜欢的旅程！祝你有一个美好的旅途
+            </p>
+        </div>
+        <div class="foot-bottom-three">
+            <span></span>
+        </div>
+        <div class="foot-bottom-four">
+            <p>
+                <a href="#">首页</a>
+                <a href="#">关于我们</a>
+                <a href="#">联系我们</a>
+            </p>
+            <p>©2016 个人展示 版权所有</p>
+            <p>
+                <a href="#">手机版</a> |
+                <a href="#">本站使用凡科建站搭建</a> |
+                <a href="#">管理登录</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    window.onload = function (e) {
+        /*
+         * 导航栏的移动
+         * */
+        (function(){
+            var navUl = document.getElementById("banner-top-center-ul");
+            var navLis = navUl.getElementsByTagName("li");
+
+            navUl.onmouseout = function (e) {
+                for(var j = 0; j < navLis.length; j++){
+                    navLis[j].classList.remove("current");
+                }
+            };
+
+            for (var i = 0; i < navLis.length; i++) {
+                navLis[i].onmouseover = function (event) {
+                    for(var j = 0; j < navLis.length; j++){
+                        navLis[j].classList.remove("current");
+                    }
+                    this.classList.add("current");
+                }
+            }
+
+            var subMenu = document.getElementById("sub-menu-id");
+            for (var i = 0; i < subMenu.children.length; i++){
+                subMenu.children[i].onmouseover = function (e) {
+                    for(var j = 0; j < subMenu.children.length; j++){
+                        subMenu.children[j].classList.remove("current");
+                    }
+                    this.classList.add("current");
+                };
+            }
+        })();
+
+
+        (function () {
+            var pageId = document.getElementById("story-page-id");
+            var is = pageId.getElementsByTagName("i");
+
+            //请求后台程序，获得页面数量
+            //假设页面数量为5
+            for (var i = 0; i < 5; i++){
+                var span = document.createElement("span");
+                span.innerHTML = i + 1;
+                pageId.insertBefore(span, pageId.lastElementChild);
+            }
+
+            var spans = pageId.getElementsByTagName("span");
+
+            //根据是哪一个页面，从而让对应的span出现边框
+            //利用window.location.href 来传递数据
+            var page = parseInt(window.location.href.split("=")[1]);
+            if (isNaN(page)){
+                spans[0].classList.add("story-page-current");
+            } else {
+                spans[page - 1].classList.add("story-page-current");
+            }
+
+
+            for (var i = 0; i < spans.length; i++){
+                spans[i].index = i+1;
+
+                spans[i].onclick = function (e) {
+                    for (var j = 0; j < spans.length; j++){
+                        spans[j].classList.remove("story-page-current");
+                    }
+                    this.classList.add("story-page-current");
+
+                    if (this.index != 1) {
+                        location.href = "./travel-note-" + this.index + ".html" + "?page=" + this.index;
+                    } else {
+                        location.href = "./travel-note.html?page=1";
+                    }
+                }
+            }
+
+            //上一页，下一页的点击
+            var current = 1;
+            is[0].onclick = function (e) {
+                current--;
+                current = current < 1 ? 1: current;
+
+                if (current == 1){
+                    location.href = "./travel-note.html?page=1";
+                } else {
+                    location.href = "./travel-note-" + current + ".html" + "?page=" + current;
+                }
+            };
+
+            is[1].onclick = function (e) {
+                current++;
+                current = current > 5 ? 5 : current;
+
+                if (current == 1){
+                    location.href = "./travel-note.html?page=1";
+                } else {
+                    location.href = "./travel-note-" + current + ".html" + "?page=" + current;
+                }
+            };
+        })();
+    };
+</script>
+</body>
+</html>

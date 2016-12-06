@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>联系我们</title>
+    <link rel="icon" href="./images/index/shortcut-icon.jpg" type="image/x-icon">
+    <script src="./js/jquery-3.1.0.min.js"></script>
+    <script src="./js/move.js"></script>
+    <script src="./js/addEvent.js"></script>
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <link rel="stylesheet" href="./css/contact.css" type="text/css">
+    <link rel="stylesheet" href="./css/Font-Awesome/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="head w">
+    <div class="head-left"></div>
+    <div class="head-center">
+    </div>
+    <div class="head-right">
+        <p><span class="icon-phone" style="color: orange;"></span> 全国客服电话</p>
+        <p>400-004-8888</p>
+        <div class="head-right-login">
+            <a href="./login.html" class="head-right-login-a-1">请登录<span>|</span></a>
+            <a href="./register.html" class="head-right-login-a-2">免费注册</a>
+        </div>
+    </div>
+</div>
+
+<div class="banner">
+    <div class="banner-top">
+        <div class="banner-top-center w">
+            <ul class="clearfix" id="banner-top-center-ul">
+                <li><a href="./index.html">首页</a></li>
+                <li><a href="./route.html">精选路线</a></li>
+                <li><a href="./strategy.html">旅游攻略</a></li>
+                <li><a href="./travel-note.html">驴友游记</a></li>
+                <li class="banner-top-center-ul-li-5 permanent">
+                    <a href="#">关于我们</a>
+                    <div class="sub-menu" id="sub-menu-id">
+                        <div><a href="present.html">公司介绍</a></div>
+                        <div><a href="./contact.html">联系我们</a></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner-img">
+        <img src="./images/contact/banner.jpg" alt="">
+    </div>
+</div>
+
+<div class="road w">
+    <div class="road-head">
+         联系我们 / <span>Contact us</span>
+        <p class="road-head-center"></p>
+    </div>
+
+    <div class="contact clearfix">
+        <div class="contact-left">
+            <h3>联系我们</h3>
+
+            <div>
+                <p>地址：</p>
+                <p><span class="iconfont" style="color: green;">&#xe614;</span> 北京市天安门正对面</p>
+            </div>
+
+            <div>
+                <p>客服QQ: </p>
+                <p><span class="iconfont" style="color: green;">&#xe607;</span>  88888888</p>
+            </div>
+
+            <div>
+                <p>电话: </p>
+                <p><span class="icon-phone" style="color: green;"></span>  88888888</p>
+                <p><span class="icon-phone" style="color: green;"></span>  88888888</p>
+            </div>
+
+            <div>
+                <p>邮箱： </p>
+                <p><span class="iconfont" style="color: green;">&#xe605;</span> mihu@mihu.com </p>
+            </div>
+
+        </div>
+        <div class="contact-right">
+            <h3>意见反馈</h3>
+            <div>
+                <p>欢迎来到我们的网站。</p>
+                <p>关于我们网站的使用问题、改进建议，或举报不良信息，可以反馈意见或者给我们留言</p>
+            </div>
+
+            <form id="form-id" action="#" method="post">
+                <div>
+                    <p>昵称</p>
+                    <input type="text" name="name">
+                    <span>*</span>
+                </div>
+                <div>
+                    <p>邮箱</p>
+                    <input type="email" name="email">
+                    <span>*</span>
+                </div>
+                <div>
+                    <p>内容</p>
+                    <textarea name="con" id=""></textarea>
+                    <span>*</span>
+                </div>
+
+                <div class="contact-error" id="contact-error-id">
+                    请填写完整信息
+                </div>
+
+                <button id="form-btn-id">提交</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="contact-map w">
+    <img src="./images/contact/map.jpg" alt="">
+</div>
+
+
+<div class="foot">
+    <div class="foot-bottom">
+        <div class="foot-bottom-one">
+            <span></span>
+        </div>
+        <div class="foot-bottom-two">
+            <p><span>Tourism</span> Design</p>
+            <p>
+                欢迎来到我们的网站，找到你喜欢的旅程！祝你有一个美好的旅途
+            </p>
+        </div>
+        <div class="foot-bottom-three">
+            <span></span>
+        </div>
+        <div class="foot-bottom-four">
+            <p>
+                <a href="#">首页</a>
+                <a href="#">关于我们</a>
+                <a href="#">联系我们</a>
+            </p>
+            <p>©2016 个人展示 版权所有</p>
+            <p>
+                <a href="#">手机版</a> |
+                <a href="#">本站使用凡科建站搭建</a> |
+                <a href="#">管理登录</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    window.onload = function (e) {
+        /*
+         * 导航栏的移动
+         * */
+        (function () {
+            var navUl = document.getElementById("banner-top-center-ul");
+            var navLis = navUl.getElementsByTagName("li");
+
+            navUl.onmouseout = function (e) {
+                for (var j = 0; j < navLis.length; j++) {
+                    navLis[j].classList.remove("current");
+                }
+            };
+
+            for (var i = 0; i < navLis.length; i++) {
+                navLis[i].onmouseover = function (event) {
+                    for (var j = 0; j < navLis.length; j++) {
+                        navLis[j].classList.remove("current");
+                    }
+                    this.classList.add("current");
+                }
+            }
+
+            var subMenu = document.getElementById("sub-menu-id");
+            for (var i = 0; i < subMenu.children.length; i++) {
+                subMenu.children[i].onmouseover = function (e) {
+                    for (var j = 0; j < subMenu.children.length; j++) {
+                        subMenu.children[j].classList.remove("current");
+                    }
+                    this.classList.add("current");
+                };
+            }
+        })();
+
+
+        (function () {
+            var formId = document.getElementById("form-id");
+            var inputs = formId.getElementsByTagName("input");
+
+            var name = inputs[0];
+            var email = inputs[1];
+            var text = formId.getElementsByTagName("textarea")[0];
+            var err = document.getElementById("contact-error-id");
+            var btn = document.getElementById("form-btn-id");
+
+            btn.onclick = function (e) {
+                if (name.value == "" || email.value == "" || text.value == ""){
+                    err.style.visibility = "visible";
+                    //出错的情况下阻止其提交
+                    e.preventDefault();
+                } else {
+                    err.style.visibility = "hidden";
+                }
+            };
+
+
+
+        })();
+    };
+</script>
+
+</body>
+</html>

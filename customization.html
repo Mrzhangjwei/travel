@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>旅游定制</title>
+    <link rel="icon" href="./images/index/shortcut-icon.jpg" type="image/x-icon">
+    <script src="./js/jquery-3.1.0.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/move.js"></script>
+    <script src="./js/addEvent.js"></script>
+    <script src="./js/scroll.js"></script>
+    <link rel="stylesheet" href="./css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <link rel="stylesheet" href="./css/customization.css" type="text/css">
+    <link rel="stylesheet" href="./css/Font-Awesome/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="head w">
+    <div class="head-left"></div>
+    <div class="head-center">
+    </div>
+    <div class="head-right">
+        <p><span class="icon-phone" style="color: orange;"></span> 全国客服电话</p>
+        <p>400-004-8888</p>
+        <div class="head-right-login">
+            <a href="./login.html" class="head-right-login-a-1">请登录<span>|</span></a>
+            <a href="./register.html" class="head-right-login-a-2">免费注册</a>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="banner">
+    <div class="banner-top">
+        <div class="banner-top-center w">
+            <ul class="clearfix" id="banner-top-center-ul">
+                <li class="permanent"><a href="./index.html">首页</a></li>
+                <li><a href="./route.html">精选路线</a></li>
+                <li><a href="./strategy.html">旅游攻略</a></li>
+                <li><a href="./travel-note.html">驴友游记</a></li>
+                <li class="banner-top-center-ul-li-5">
+                    <a href="#">关于我们</a>
+                    <div class="sub-menu" id="sub-menu-id">
+                        <div><a href="present.html">公司介绍</a></div>
+                        <div><a href="./contact.html">联系我们</a></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="banner-con">
+        <div class="banner-con-img" id="banner-con-img-id">
+            <ul>
+                <li><a href="#"><img src="./images/customization/banner-1.jpg" alt=""></a></li>
+                <li><a href="#"><img src="./images/customization/banner-2.jpg" alt=""></a></li>
+                <li><a href="#"><img src="./images/customization/banner-3.jpg" alt=""></a></li>
+                <li><a href="#"><img src="./images/customization/banner-4.jpg" alt=""></a></li>
+                <li><a href="#"><img src="./images/customization/banner-5.jpg" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="banner-con-change" id="banner-con-change-id">
+            <img  class="banner-con-change-left" src="./images/index/left.png" alt="">
+            <img class="banner-con-change-right" src="./images/index/right.png" alt="">
+        </div>
+    </div>
+</div>
+
+
+
+<div class="custom-steps  w">
+   <div class="custom-steps-btn">
+       <a href="#" id="custom-btn-id">开启定制之旅</a>
+       <p>预订咨询 : 400-1161-808</p>
+   </div>
+</div>
+
+
+<div class="overmask" id="overmask-id"></div>
+
+<div class="travel" id="travel-id">
+    <div class="head">
+        <h3>旅程信息</h3>
+        <div class="head-close" id="head-close-id"></div>
+    </div>
+
+    <div class="say">
+        您只需决定出发，剩下的一切交给迷糊就行了。
+    </div>
+
+    <form action="#" method="post">
+
+        <div class="type">
+            <strong>定制类型：<i>*</i></strong>
+            <input type="radio" name="type" value="1">企业公司
+            <input type="radio" name="type" value="2">亲朋好友
+            <input type="radio" name="type" value="3">家庭亲子
+            <input type="radio" name="type" value="4">个人
+        </div>
+
+        <div class="type">
+            <strong>目标区域：<i>*</i></strong>
+            <input type="radio" name="target" value="1">国内
+            <input type="radio" name="target" value="2">港澳台
+            <input type="radio" name="target" value="3">东南亚
+            <input type="radio" name="target" value="3">日韩
+            <input type="radio" name="target" value="4">欧美
+            <input type="radio" name="target" value="5">非洲地区
+            <input type="radio" name="target" value="6">其他
+        </div>
+
+        <div class="type date">
+            <strong>出发日期：<i>*</i></strong>
+            <input type="text"  id="first-date" name="firstdate" placeholder="最早出发日期">
+            <span>-</span>
+            <input type="text"  id="second-date" name="seconddate" placeholder="最晚出发日期">
+        </div>
+
+        <div class="type common">
+            <strong>出行人数：<i>*</i></strong>
+            <input type="number" id="nums-id" name="nums">
+        </div>
+
+        <div class="type yusuan common">
+            <strong>预算：<i>*</i></strong>
+            <input type="number" id="cost-id" name="cost"><span>元/人</span>
+        </div>
+
+        <div class="type common other">
+            <strong>其他需求：<i>*</i></strong>
+            <input type="text" id="other-id" name="other" placeholder="这里输入您本次行程的用餐、酒店等需求，我们将尽快与您联系">
+        </div>
+
+        <div class="line"></div>
+
+        <div class="type common contact">
+            <strong>联系人：<i>*</i></strong>
+            <input type="text" id="contact-id" name="contact">
+        </div>
+
+        <div class="type common phone">
+            <strong>电话：<i>*</i></strong>
+            <input type="text" id="phone-id" name="phone">
+        </div>
+
+        <div class="type common email">
+            <strong>邮箱：<i>*</i></strong>
+            <input type="email" id="email-id" name="email">
+        </div>
+
+        <div class="error" id="form-error-id">
+            <span class="icon-remove-circle"></span> 为了能更好的为您服务 请将带*的信息填写完整
+        </div>
+
+        <div class="btn">
+            <button type="submit" id="submit_form">提交</button>
+            <p>您也可以直接拨打我们的热线电话：<span>400-1161-808</span></p>
+        </div>
+    </form>
+
+</div>
+
+
+<div class="common w">
+    <div class="common-head">
+        <h2>公司企业成团</h2>
+        <p>热门路线，超凡体验</p>
+    </div>
+
+    <div class="common-items-head" id="company-items-head-id">
+        <ul>
+            <li class="current">热门<i></i></li>
+            <li>户外拓展<i></i></li>
+            <li>留学考察<i></i></li>
+            <li>度假放松<i></i></li>
+        </ul>
+    </div>
+
+    <div class="common-items-show" id="company-items-show-id">
+        <div class="sub-item current">
+          <ul>
+              <li>
+                  <div class="sub-item-img">
+                      <a href="#"><img src="./images/customization/company/1.jpg" alt=""></a>
+                      <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                  </div>
+                  <div class="sub-item-con">
+                      <p><a href="#">沪城、稻城、亚丁五日游</a></p>
+                  </div>
+              </li>
+              <li>
+                  <div class="sub-item-img">
+                      <a href="#"><img src="./images/customization/company/2.jpg" alt=""></a>
+                      <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                  </div>
+                  <div class="sub-item-con">
+                      <p><a href="#">挪威：峡湾、冰川、登山深度体验游</a></p>
+                  </div>
+              </li>
+              <li>
+                  <div class="sub-item-img">
+                      <a href="#"><img src="./images/customization/company/3.jpg" alt=""></a>
+                      <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                  </div>
+                  <div class="sub-item-con">
+                      <p><a href="#">上海迪士尼乐园＋江南古镇5日游</a></p>
+                  </div>
+              </li>
+              <li>
+                  <div class="sub-item-img">
+                      <a href="#"><img src="./images/customization/company/4.jpg" alt=""></a>
+                      <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                  </div>
+                  <div class="sub-item-con">
+                      <p><a href="#">开启斯里兰卡7日6晚奇幻之旅</a></p>
+                  </div>
+              </li>
+          </ul>
+      </div>
+        <div class="sub-item">
+            <ul>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/company/5.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">沪城、稻城、亚丁五日游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/company/6.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">挪威：峡湾、冰川、登山深度体验游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/company/7.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">上海迪士尼乐园＋江南古镇5日游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/company/8.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">开启斯里兰卡7日6晚奇幻之旅</a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="sub-item">
+            <ul>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/company/9.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">沪城、稻城、亚丁五日游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/company/10.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">挪威：峡湾、冰川、登山深度体验游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/company/11.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">上海迪士尼乐园＋江南古镇5日游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/company/12.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">开启斯里兰卡7日6晚奇幻之旅</a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="sub-item">
+            <ul>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/company/13.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">沪城、稻城、亚丁五日游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/company/14.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">挪威：峡湾、冰川、登山深度体验游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/company/15.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">上海迪士尼乐园＋江南古镇5日游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/company/16.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">开启斯里兰卡7日6晚奇幻之旅</a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="per-items">
+      <ul>
+          <li>
+              <a href="#"><img src="./images/customization/company/17.jpg" alt=""></a>
+              <p><a href="#">西塘水乡古镇2日游鸟瞰全镇，<br/>瓦屋倒影。</a></p>
+          </li>
+
+          <li>
+              <a href="#"><img src="./images/customization/company/18.jpg" alt=""></a>
+              <p><a href="#">西塘水乡古镇2日游鸟瞰全镇，<br/>瓦屋倒影。</a></p>
+          </li>
+
+          <li>
+              <a href="#"><img src="./images/customization/company/19.jpg" alt=""></a>
+              <p><a href="#">西塘水乡古镇2日游鸟瞰全镇，<br/>瓦屋倒影。</a></p>
+          </li>
+
+          <li>
+              <a href="#"><img src="./images/customization/company/20.jpg" alt=""></a>
+              <p><a href="#">西塘水乡古镇2日游鸟瞰全镇，<br/>瓦屋倒影。</a></p>
+          </li>
+      </ul>
+    </div>
+</div>
+
+
+<div class="common w common-special">
+    <div class="common-head">
+        <h2>个人&成团推荐</h2>
+        <p>热门路线，超凡体验</p>
+    </div>
+
+    <div class="common-items-head" id="personal-items-head-id">
+        <ul>
+            <li class="current">热门<i></i></li>
+            <li>户外体验<i></i></li>
+            <li>亲子娱乐<i></i></li>
+            <li>休闲度假<i></i></li>
+        </ul>
+    </div>
+
+    <div class="common-items-show" id="personal-items-show-id">
+        <div class="territory"><img src="./images/customization/personal/territory.jpg" alt=""></div>
+        <div class="sub-item current">
+            <ul>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img width="258" src="./images/customization/personal/1.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">沪城、稻城、亚丁五日游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/personal/2.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">挪威：峡湾、冰川、登山深度体验游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/personal/3.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">上海迪士尼乐园＋江南古镇5日游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/personal/4.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">开启斯里兰卡7日6晚奇幻之旅</a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="sub-item">
+            <ul>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/personal/5.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">沪城、稻城、亚丁五日游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/personal/6.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">挪威：峡湾、冰川、登山深度体验游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/personal/7.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">上海迪士尼乐园＋江南古镇5日游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/personal/8.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">开启斯里兰卡7日6晚奇幻之旅</a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="sub-item">
+            <ul>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/personal/9.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">沪城、稻城、亚丁五日游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/personal/10.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">挪威：峡湾、冰川、登山深度体验游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/personal/11.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">上海迪士尼乐园＋江南古镇5日游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/personal/12.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">开启斯里兰卡7日6晚奇幻之旅</a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="sub-item">
+            <ul>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/personal/13.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">沪城、稻城、亚丁五日游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/personal/14.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">挪威：峡湾、冰川、登山深度体验游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/personal/15.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">上海迪士尼乐园＋江南古镇5日游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/personal/16.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">开启斯里兰卡7日6晚奇幻之旅</a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="common w ">
+    <div class="common-items-head" id="personal-items-head-id-1">
+        <ul>
+            <li class="current">独家定制<i></i></li>
+            <li>海外旅拍<i></i></li>
+            <li>高端自驾<i></i></li>
+            <li>亲子度假<i></i></li>
+        </ul>
+    </div>
+
+    <div class="common-items-show" id="personal-items-show-id-1">
+        <div class="depart"><img src="./images/customization/personal/depart.jpg" alt=""></div>
+        <div class="sub-item current">
+            <ul>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img width="258" src="./images/customization/personal/2-1.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">沪城、稻城、亚丁五日游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/personal/2-2.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">挪威：峡湾、冰川、登山深度体验游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/personal/2-3.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">上海迪士尼乐园＋江南古镇5日游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/personal/2-4.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">开启斯里兰卡7日6晚奇幻之旅</a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="sub-item">
+            <ul>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/personal/2-5.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">沪城、稻城、亚丁五日游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/personal/2-6.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">挪威：峡湾、冰川、登山深度体验游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/personal/2-7.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">上海迪士尼乐园＋江南古镇5日游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/personal/2-8.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">开启斯里兰卡7日6晚奇幻之旅</a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="sub-item">
+            <ul>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/personal/2-9.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">沪城、稻城、亚丁五日游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/personal/2-10.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">挪威：峡湾、冰川、登山深度体验游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/personal/2-11.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">上海迪士尼乐园＋江南古镇5日游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/personal/2-12.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">开启斯里兰卡7日6晚奇幻之旅</a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="sub-item">
+            <ul>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/personal/2-13.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">沪城、稻城、亚丁五日游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/personal/2-14.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">挪威：峡湾、冰川、登山深度体验游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/personal/2-15.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">上海迪士尼乐园＋江南古镇5日游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/personal/2-16.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">开启斯里兰卡7日6晚奇幻之旅</a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="common w ">
+
+    <div class="common-head">
+        <h2>合作产品推荐</h2>
+        <p>热门路线，超凡体验</p>
+    </div>
+
+    <div class="common-items-show" id="cooperation-items-show-id">
+        <div class="sub-item current">
+            <ul>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img width="258" src="./images/customization/cooperation/1.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">沪城、稻城、亚丁五日游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/cooperation/2.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">挪威：峡湾、冰川、登山深度体验游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/cooperation/3.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">上海迪士尼乐园＋江南古镇5日游</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sub-item-img">
+                        <a href="#"><img src="./images/customization/cooperation/4.jpg" alt=""></a>
+                        <p>走进“蓝色星球上最后一片净土”，领略魅力康南最具代表的景色</p>
+                    </div>
+                    <div class="sub-item-con">
+                        <p><a href="#">开启斯里兰卡7日6晚奇幻之旅</a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="why-us w">
+    <div class="head">
+        <h2>为什么选择我们？</h2>
+    </div>
+
+    <div class="ad">
+        <ul class="clearfix">
+            <li>
+                <div class="left one"></div>
+                <div class="right">
+                    <h2>个性化定制</h2>
+                    <p>旅游尊贵定制服务</p>
+                </div>
+            </li>
+            <li>
+                <div class="left two"></div>
+                <div class="right">
+                    <h2>专业团队</h2>
+                    <p>6年专注于定制服</p>
+                </div>
+            </li>
+            <li>
+                <div class="left three"></div>
+                <div class="right">
+                    <h2>高性价比</h2>
+                    <p>透明价格保证服务质量</p>
+                </div>
+            </li>
+            <li>
+                <div class="left four"></div>
+                <div class="right">
+                    <h2>绝佳体验</h2>
+                    <p>给您带来品质上乘的绝佳体验</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="service">
+
+    <!-- 点击每个li时应该进行页面的跳转，需要在js中做？？？？   -->
+    <ul>
+        <li>
+            <span class="service-one"></span>
+            <p>
+                <strong>价格保证</strong><br/>
+                同类产品,保证低价
+            </p>
+        </li>
+        <li>
+            <span class="service-two"></span>
+            <p>
+                <strong>退订保障</strong><br/>
+                因特殊情况影响出行，保证退订
+            </p>
+        </li>
+        <li>
+            <span class="service-three"></span>
+            <p>
+                <strong>救援保障</strong><br/>
+                旅途中遇意外情况，保证援助
+            </p>
+        </li>
+        <li>
+            <span class="service-four"></span>
+            <p>
+                <strong>7x24小时服务</strong><br/>
+                快速响应，全年无休
+            </p>
+        </li>
+    </ul>
+</div>
+
+
+<div class="foot">
+    <div class="foot-bottom">
+        <div class="foot-bottom-one">
+            <span></span>
+        </div>
+        <div class="foot-bottom-two">
+            <p><span>Tourism</span> Design</p>
+            <p>
+                欢迎来到我们的网站，找到你喜欢的旅程！祝你有一个美好的旅途
+            </p>
+        </div>
+        <div class="foot-bottom-three">
+            <span></span>
+        </div>
+        <div class="foot-bottom-four">
+            <p>
+                <a href="#">首页</a>
+                <a href="#">关于我们</a>
+                <a href="#">联系我们</a>
+            </p>
+            <p>©2016 个人展示 版权所有</p>
+            <p>
+                <a href="#">手机版</a> |
+                <a href="#">本站使用凡科建站搭建</a> |
+                <a href="#">管理登录</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="back" id="back-id">
+    <div class="back-close"></div>
+    <div class="back-top"></div>
+</div>
+
+
+<script>
+    (function () {
+        var imgs = document.getElementsByClassName("img");
+
+        for (var i = 0; i < imgs.length; i++){
+            imgs[i].classList.add("load");
+        }
+    })();
+</script>
+
+<script>
+    window.onload = function (e) {
+        /*
+         * 导航栏的移动
+         * */
+        (function () {
+            var navUl = document.getElementById("banner-top-center-ul");
+            var navLis = navUl.getElementsByTagName("li");
+
+            navUl.onmouseout = function (e) {
+                for (var j = 0; j < navLis.length; j++) {
+                    navLis[j].classList.remove("current");
+                }
+            };
+
+            for (var i = 0; i < navLis.length; i++) {
+                navLis[i].onmouseover = function (event) {
+                    for (var j = 0; j < navLis.length; j++) {
+                        navLis[j].classList.remove("current");
+                    }
+                    this.classList.add("current");
+                }
+            }
+
+            var subMenu = document.getElementById("sub-menu-id");
+            for (var i = 0; i < subMenu.children.length; i++) {
+                subMenu.children[i].onmouseover = function (e) {
+                    for (var j = 0; j < subMenu.children.length; j++) {
+                        subMenu.children[j].classList.remove("current");
+                    }
+                    this.classList.add("current");
+                };
+            }
+        })();
+
+
+        /*
+         * 图片的轮播
+         * */
+        (function(){
+
+            var bannerImgs = document.getElementById("banner-con-img-id");
+            var bannerCon = bannerImgs.parentNode;
+            var changeImgs = bannerImgs.getElementsByTagName("li");
+            changeImgs[0].classList.add("current");
+
+            var changeBox = document.getElementById("banner-con-change-id");
+            var arrow = changeBox.children;
+            var current = 0;
+            var timer = null;
+
+            //自动播放
+            autoPlay();
+
+
+            addEvent(arrow[0], "click", leftHandler);
+            addEvent(arrow[1], "click", rightHandler);
+
+            addEvent(changeBox, "mouseover", function(){
+                clearInterval(timer);
+            });
+
+            addEvent(changeBox, "mouseout", function(){
+                autoPlay();
+            });
+
+
+            function autoPlay(){
+                clearInterval(timer);
+                timer = setInterval(function(){
+                    current++;
+                    current = current > changeImgs.length - 1 ? 0 : current;
+
+//                    console.log("autoplay -----", current);
+
+                    for (var i = 0; i < changeImgs.length; i++){
+                        changeImgs[i].classList.remove("current");
+                    }
+
+                    changeImgs[current].classList.add("current");
+
+                },2000);
+
+                return;
+            }
+
+
+            function leftHandler(e){
+                current--;
+                if (current < 0){
+                    current = 0;
+                    return;
+                }
+
+                console.log("left----", current);
+
+                for (var i = 0; i < changeImgs.length; i++){
+                    changeImgs[i].classList.remove("current");
+//                    $(changeImgs[i]).fadeOut(300);
+                }
+
+                changeImgs[current].classList.add("current");
+//                $(changeImgs[current]).fadeIn(300);
+            }
+
+            function rightHandler(e){
+                current++;
+                if (current > changeImgs.length - 1){
+                    current = changeImgs.length - 1;
+                    return;
+                }
+
+                console.log("right----", current);
+
+                for (var i = 0; i < changeImgs.length; i++){
+                    changeImgs[i].classList.remove("current");
+//                    $(changeImgs[i]).fadeOut(300);
+                }
+                changeImgs[current].classList.add("current");
+//                $(changeImgs[current]).fadeIn(300);
+            }
+        })();
+
+
+
+        /*
+          表单的验证提交
+        */
+        (function () {
+            var customBtn = document.getElementById("custom-btn-id");
+            var overMask = document.getElementById("overmask-id");
+            var travel = document.getElementById("travel-id");
+            var travelClose = document.getElementById("head-close-id");
+
+            //输入日期
+            $("#first-date").datepicker();
+            $("#second-date").datepicker();
+
+
+            customBtn.onclick = function (e) {
+                overMask.classList.add("current");
+                travel.classList.add("current");
+            };
+
+            travelClose.onclick = function (e) {
+                overMask.classList.remove("current");
+                travel.classList.remove("current");
+            }
+
+
+            var submitBtn = document.getElementById("submit_form");
+            var formErr = document.getElementById("form-error-id");
+
+            /*
+            * 表单提交按钮
+            * */
+            submitBtn.onclick = function (e) {
+
+                //获得点击的radio
+                var inputType = document.querySelector("input[name=type]:checked");
+                var inputTarget = document.querySelector("input[name=target]:checked");
+
+                var firstDate = document.getElementById("first-date");
+                var secondDate = document.getElementById("last-date");
+                var cost = document.getElementById("cost-id");
+                var other = document.getElementById("other-id");
+                var nums = document.getElementById("nums-id");
+                var phone = document.getElementById("phone-id");
+                var email = document.getElementById("email-id");
+                var contact = document.getElementById("contact-id");
+
+                if (inputType && inputTarget && firstDate.value && secondDate.value &&
+                cost.value && other.value && nums.value && phone.value && email.value && contact.value){
+
+
+                    /*数据提交*/
+                    // .....
+                      // $.get();
+
+                    /*提交数据之后，关闭窗口*/
+                    overMask.classList.remove("current");
+                    travel.classList.remove("current");
+
+                } else {
+                    e.preventDefault();
+                    formErr.style.visibility = "visible";
+                }
+
+            };
+
+
+
+        })();
+
+
+
+        /*
+         tab栏的切换
+         */
+        showTab("company-items-head-id", "company-items-show-id");
+        showTab("personal-items-head-id", "personal-items-show-id");
+        showTab("personal-items-head-id-1", "personal-items-show-id-1");
+
+        function showTab(headId,  showId) {
+            var head = document.getElementById(headId);
+            var headLis = head.getElementsByTagName("li");
+
+            var show = document.getElementById(showId);
+            var shows = show.getElementsByClassName("sub-item");
+
+            for (var i = 0; i < headLis.length; i++) {
+                headLis[i].index = i;
+
+                headLis[i].onclick = function (e) {
+                    for (var j = 0; j < headLis.length; j++) {
+                        headLis[j].classList.remove("current");
+                        shows[j].classList.remove("current");
+                    }
+                    this.classList.add("current");
+                    shows[this.index].classList.add("current");
+                }
+            }
+        }
+
+
+        /*
+        *  返回顶部按钮
+        * */
+        (function () {
+            var back = document.getElementById("back-id");
+            var backClose = back.children[0] ;
+            var backTop = back.children[1] ;
+            var current = 0, timer = null;
+
+            backClose.onclick = function () {
+                back.classList.remove("current");
+            };
+
+            window.onscroll = function (e) {
+                current = scroll().top;
+                if (current > 500) {
+                    back.classList.add("current");
+                } else {
+                    back.classList.remove("current");
+                }
+            };
+
+            backTop.onclick = function (e) {
+                clearInterval(timer);
+                timer = setInterval(function(){
+                    var speed = (0 - current) / 10;
+                    speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+                    current += speed;
+                    window.scrollTo(0, current);
+
+                    if (current == 0){
+                        window.scroll(0, 0);
+                        clearInterval(timer);
+                    }
+                },30);
+            };
+
+        })();
+
+
+
+
+    };
+</script>
+</body>
+</html>

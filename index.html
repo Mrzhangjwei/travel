@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>迷糊旅游</title>
+    <link rel="icon" href="./images/index/shortcut-icon.jpg" type="image/x-icon">
+    <script src="./js/jquery-3.1.0.min.js"></script>
+    <script src="./js/move.js"></script>
+    <script src="./js/addEvent.js"></script>
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <link rel="stylesheet" href="./css/index.css" type="text/css">
+    <link rel="stylesheet" href="./css/Font-Awesome/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="head w">
+    <div class="head-left"></div>
+    <div class="head-center">
+    </div>
+    <div class="head-right">
+        <p><span class="icon-phone" style="color: orange;"></span> 全国客服电话</p>
+        <p>400-004-8888</p>
+        <div class="head-right-login">
+            <a href="./login.html" class="head-right-login-a-1">请登录<span>|</span></a>
+            <a href="./register.html" class="head-right-login-a-2">免费注册</a>
+        </div>
+    </div>
+</div>
+
+<div class="banner">
+    <div class="banner-top">
+        <div class="banner-top-center w">
+            <ul class="clearfix" id="banner-top-center-ul">
+                <li class="permanent"><a href="#">首页</a></li>
+                <li><a href="./route.html">精选路线</a></li>
+                <li><a href="./strategy.html">旅游攻略</a></li>
+                <li><a href="./travel-note.html">驴友游记</a></li>
+                <li class="banner-top-center-ul-li-5">
+                    <a href="#">关于我们</a>
+                    <div class="sub-menu" id="sub-menu-id">
+                        <div><a href="present.html">公司介绍</a></div>
+                        <div><a href="./contact.html">联系我们</a></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner-con">
+        <div class="banner-con-img" id="banner-con-img-id">
+            <ul class="clearfix">
+                <li><a href="#"><img src="./images/index/banner-1.jpg" alt=""></a></li>
+                <li><a href="#"><img src="./images/index/banner-2.jpg" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="banner-con-change" id="banner-con-change-id">
+            <img  class="banner-con-change-left" src="./images/index/left.png" alt="">
+            <img class="banner-con-change-right" src="./images/index/right.png" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="road w">
+    <div class="road-head">
+        旅游 &nbsp;/ &nbsp;&nbsp; <span>Roadmap</span>
+        <p class="road-head-center"></p>
+    </div>
+ <ul>
+     <li>
+         <a href="./customization.html">
+             <div class="road-circle-1"></div>
+             <div class="road-circle-2"></div>
+             <div class="road-circle-3"></div>
+             <div class="road-circle-con">01</div>
+         </a>
+         <div class="road-one">
+             <h4>旅游定制</h4>
+             <p>
+                 我们有属于自己专业的旅游服务<br/>
+                 团队不断的为用户提供更多更快捷实用的<br/>
+                 功能与服务。
+             </p>
+         </div>
+     </li>
+     <li>
+         <a href="#">
+             <div class="road-circle-1"></div>
+             <div class="road-circle-2"></div>
+             <div class="road-circle-3"></div>
+             <div class="road-circle-con">02</div>
+         </a>
+         <div class="road-one">
+             <h4>航班信息</h4>
+             <p>
+            出游客旅游网在线预订功能使<br/>
+            游客可以简单快捷的实现旅游线路的在<br/>
+            线预订以及在线支付操作<br/>
+             </p>
+         </div>
+     </li>
+     <li>
+         <a href="./newbie.html">
+             <div class="road-circle-1"></div>
+             <div class="road-circle-2"></div>
+             <div class="road-circle-3"></div>
+             <div class="road-circle-con">03</div>
+         </a>
+         <div class="road-one">
+             <h4>新手导航</h4>
+             <p>
+                 这里拥有世界热门旅行地全方位的信息和推荐
+                 也为你筛选呈现这个星球<br/>
+                 最鲜活真实的模样，让你拥有独自丈量、探索、体验这个世界的勇气。
+             </p>
+         </div>
+     </li>
+     <li>
+         <a href="./hotel.html">
+             <div class="road-circle-1"></div>
+             <div class="road-circle-2"></div>
+             <div class="road-circle-3"></div>
+             <div class="road-circle-con">04</div>
+         </a>
+         <div class="road-one">
+             <h4>酒店门票</h4>
+             <p>
+            区域攻略到特色主题，应有尽有。多平<br/>
+            台价格对比，天天专享特惠<br/>
+            超过100万真实用户点评和游记
+             </p>
+         </div>
+     </li>
+ </ul>
+</div>
+
+<div class="service">
+    <div class="service-left"></div>
+    <div class="service-right">
+        <p class="service-right-head">我们的服务　/  Our service</p>
+
+        <p class="service-right-center">
+            旅行不是一次出行，也不只是一个假期。旅行是一个过程，一次发现。是一个自我发现的过程。
+           真正的旅行让我们直面自我。旅行不仅让我们看到世界，更让我们看到自己在其中的位置。
+        </p>
+
+        <ul class="service-right-foot">
+            <li>· 高效快捷的提供商系统应用，聚集了2000+家各地的供应商</li>
+            <li>· 资源丰富，超过200万条旅游路线供你选择</li>
+            <li>· 八大核心保障， 选我们更放心</li>
+            <li>· 我们与旅游战略品牌联盟，合作了很多很多战略伙伴</li>
+        </ul>
+    </div>
+</div>
+
+<div class="route w">
+    <div class="road-head">
+        路线 &nbsp;/ &nbsp;&nbsp; <span>Resource</span>
+        <p class="road-head-center"></p>
+    </div>
+
+    <div class="route-con">
+        <p style="white-space: pre;">
+        我们这里有超过200万条旅游路线供你选择，国内云南、北京、海南都可以带你去。
+        想出国，欧洲、美洲、东南亚甚至南极，都可以带你去。只要你想去，我们都可以带你去，我们保证这些产品
+        的服务质量。当你决定要出发，剩下的都交给我们吧
+        </p>
+    </div>
+
+    <div class="route-map">
+        <img class="route-map-big" src="./images/index/map.jpg" alt="">
+        <img class="route-map-eur" src="./images/index/europen.png" alt="">
+        <img class="route-map-russia" src="./images/index/russia.png" alt="">
+        <img class="route-map-asia" src="./images/index/asia.png" alt="">
+        <img class="route-map-china" src="./images/index/china.png" alt="">
+    </div>
+</div>
+
+
+<div class="business w">
+    <div class="business-head">
+         独特 <span>7</span> 大核心业务
+        <p class="business-head-center"></p>
+    </div>
+
+    <div class="business-con">
+        <div class="business-con-left">
+            <p class="business-con-left-con">
+            客户的满意是他们最大的追求! 他们对旅游无所不
+            知，他们对路线无所不晓，他们能帮你定制最合适你的旅程
+            为你提供无微不至的旅途服务，
+            只要你一个联系方式
+            我们为你寻找最合适你的旅游顾问。
+
+            As long as you have a contact. We are
+            looking for the best for you
+            </p>
+            <div class="business-con-left-btn">
+                联系我们
+            </div>
+        </div>
+        <div class="business-con-right">
+            <div class="business-hexagon">
+                <div class="six-1"></div>
+                <div class="six-2"></div>
+                <div class="six-3"></div>
+                <div class="six-con">
+                    <img src="./images/index/six-1.png" alt="">
+                    <p>订路线</p>
+                </div>
+            </div>
+            <div class="business-hexagon">
+                <div class="six-1"></div>
+                <div class="six-2"></div>
+                <div class="six-3"></div>
+                <div class="six-con">
+                    <img src="./images/index/six-2.png" alt="">
+                    <p>旅行社</p>
+                </div>
+            </div>
+            <div class="business-hexagon">
+                <div class="six-1"></div>
+                <div class="six-2"></div>
+                <div class="six-3"></div>
+                <div class="six-con">
+                    <img src="./images/index/six-3.png" alt="">
+                    <p>找攻略</p>
+                </div>
+            </div>
+            <div class="business-hexagon">
+                <div class="six-1"></div>
+                <div class="six-2"></div>
+                <div class="six-3"></div>
+                <div class="six-con">
+                    <img src="./images/index/six-4.png" alt="">
+                    <p>服务周全</p>
+                </div>
+            </div>
+            <div class="business-hexagon">
+                <div class="six-1"></div>
+                <div class="six-2"></div>
+                <div class="six-3"></div>
+                <div class="six-con">
+                    <img src="./images/index/six-5.png" alt="">
+                    <p>搜酒店</p>
+                </div>
+            </div>
+            <div class="business-hexagon">
+                <div class="six-1"></div>
+                <div class="six-2"></div>
+                <div class="six-3"></div>
+                <div class="six-con">
+                    <img src="./images/index/six-6.png" alt="">
+                    <p>订机票</p>
+                </div>
+            </div>
+            <div class="business-hexagon">
+                <div class="six-1"></div>
+                <div class="six-2"></div>
+                <div class="six-3"></div>
+                <div class="six-con">
+                    <img src="./images/index/six-7.png" alt="">
+                    <p>查门票</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="story w">
+    <div class="road-head story-head">
+        旅游故事 &nbsp;/&nbsp; <span>Story</span>
+        <p class="road-head-center"></p>
+    </div>
+
+    <div class="story-item">
+        <div class="story-item-left">
+            <a href="#">
+                <img src="./images/index/story-1.png" alt="">
+            </a>
+        </div>
+        <div class="story-item-center">
+            <h3>
+                <a href="#">嵊泗小时光 流浪在泗礁本岛</a>
+            </h3>
+            <p>
+                许阴雨连绵会带来灰度的海与天，像小孩子哭丧着的脸，但在热情满满的大晴天，它恢复了湛蓝与澄澈，这是原本的面貌，也是...
+            </p>
+            <div>[游记]</div>
+        </div>
+        <div class="story-item-right">
+            <p>2020-08-08</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="foot">
+    <div class="foot-top">
+        <div class="foot-top-con w">
+            <div class="foot-top-con-left"></div>
+            <div class="foot-top-con-right">
+                <p>来一次说走走的旅行吧！<p>
+                <p>
+                旅行是一个过程，一次发现。是一个自我发现的过程。真正的旅行让我们直面自我。
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="foot-bottom">
+        <div class="foot-bottom-one">
+            <span></span>
+        </div>
+        <div class="foot-bottom-two">
+            <p><span>Tourism</span> Design</p>
+            <p>
+                欢迎来到我们的网站，找到你喜欢的旅程！祝你有一个美好的旅途
+            </p>
+        </div>
+        <div class="foot-bottom-three">
+            <span></span>
+        </div>
+        <div class="foot-bottom-four">
+            <p>
+                <a href="#">首页</a>
+                <a href="#">关于我们</a>
+                <a href="#">联系我们</a>
+            </p>
+            <p>©2016 个人展示 版权所有</p>
+            <p>
+                <a href="#">手机版</a> |
+                <a href="#">本站使用凡科建站搭建</a> |
+                <a href="#">管理登录</a>
+            </p>
+        </div>
+    </div>
+</div>
+<script>
+
+    window.onload = function (e) {
+
+        /*
+        * 导航栏的移动
+        * */
+        (function(){
+            var navUl = document.getElementById("banner-top-center-ul");
+            var navLis = navUl.getElementsByTagName("li");
+
+            navUl.onmouseout = function (e) {
+                for(var j = 0; j < navLis.length; j++){
+                    navLis[j].classList.remove("current");
+                }
+            };
+
+            for (var i = 0; i < navLis.length; i++) {
+                navLis[i].onmouseover = function (event) {
+                    for(var j = 0; j < navLis.length; j++){
+                        navLis[j].classList.remove("current");
+                    }
+                    this.classList.add("current");
+                }
+            }
+
+            var subMenu = document.getElementById("sub-menu-id");
+            for (var i = 0; i < subMenu.children.length; i++){
+                subMenu.children[i].onmouseover = function (e) {
+                    for(var j = 0; j < subMenu.children.length; j++){
+                        subMenu.children[j].classList.remove("current");
+                    }
+                    this.classList.add("current");
+                };
+            }
+        })();
+
+        /*
+        * 图片的轮播
+        * */
+        (function(){
+
+            var bannerImgs = document.getElementById("banner-con-img-id");
+            var bannerCon = bannerImgs.parentNode;
+            var changeImgs = bannerImgs.getElementsByTagName("li");
+            changeImgs[0].classList.add("current");
+
+            var changeBox = document.getElementById("banner-con-change-id");
+            var arrow = changeBox.children;
+            var current = 0;
+            var timer = null;
+
+            //自动播放
+            autoPlay();
+
+
+            addEvent(arrow[0], "click", leftHandler);
+            addEvent(arrow[1], "click", rightHandler);
+
+            addEvent(changeBox, "mouseover", function(){
+                clearInterval(timer);
+            });
+
+            addEvent(changeBox, "mouseout", function(){
+                autoPlay();
+            });
+
+
+            function autoPlay(){
+                clearInterval(timer);
+                timer = setInterval(function(){
+                    current++;
+                    current = current > changeImgs.length - 1 ? 0 : current;
+
+                    /*
+                    for (var i = 0; i < changeImgs.length; i++){
+                        changeImgs[i].classList.remove("current");
+                    }
+                    changeImgs[current].classList.add("current");
+                    */
+
+                    $(changeImgs[current]).fadeIn(600).siblings("li").fadeOut(600);
+
+                },2000);
+
+                return;
+            }
+
+
+            function leftHandler(e){
+                current--;
+                if (current < 0){
+                    current = 0;
+                    return;
+                }
+
+                /*
+                for (var i = 0; i < changeImgs.length; i++){
+                    changeImgs[i].classList.remove("current");
+                }
+                changeImgs[current].classList.add("current");
+                */
+
+                $(changeImgs[current]).fadeIn(600).siblings("li").fadeOut(600);
+
+            }
+
+            function rightHandler(e){
+                current++;
+                if (current > changeImgs.length - 1){
+                    current = changeImgs.length - 1;
+                    return;
+                }
+
+                /*
+                for (var i = 0; i < changeImgs.length; i++){
+                    changeImgs[i].classList.remove("current");
+                }
+                changeImgs[current].classList.add("current");
+                */
+                $(changeImgs[current]).fadeIn(600).siblings("li").fadeOut(600);
+            }
+        })();
+};
+
+
+</script>
+</body>
+</html>

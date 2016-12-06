@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>迷糊旅游网-登录</title>
+    <link rel="icon" href="./images/index/shortcut-icon.jpg" type="image/x-icon">
+    <script src="./js/jquery-3.1.0.min.js"></script>
+    <script src="./js/move.js"></script>
+    <script src="./js/addEvent.js"></script>
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <link rel="stylesheet" href="./css/login.css" type="text/css">
+    <link rel="stylesheet" href="./css/Font-Awesome/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="head w">
+    <div class="head-left"></div>
+    <div class="head-center">
+        <p><span>|</span>登录中心</p>
+    </div>
+    <div class="head-right">
+        <p><span class="icon-phone" style="color: orange;"></span> 全国客服电话</p>
+        <p>400-004-8888</p>
+        </div>
+    </div>
+</div>
+
+<div class="login">
+    <div class="login-img"></div>
+    <div class="login-input">
+        <div class="head">普通登录</div>
+        <div class="error" id="login-error-id">用户名和密码不能为空！</div>
+        <div class="error-1" id="login-error-id-1">
+            <span class="icon-remove-circle icon-large" style="color: orange;"></span>用户名或密码错误
+        </div>
+
+        <!-- 没有直接使用form表单 -->
+        <div class="login-form" id="login-form-id">
+            <div class="text-type">
+                <input type="text" name="username" id="username-id">
+                <div class="hint"><span class="icon-user-md"></span> 邮箱/手机号/会员名</div>
+            </div>
+            <div class="text-type">
+                <input type="password" name="userpasswd" id="userpasswd-id">
+                <div class="hint"><span class="icon-lock"></span> 请输入密码</div>
+            </div>
+            <div class="remember clearfix">
+                <div class="remember-left"><input type="checkbox">记住密码</div>
+                <div class="remember-right"><a href="#">忘记密码?</a></div>
+            </div>
+            <div class="form-submit"><button id="form-submit-id">登录</button></div>
+        </div>
+
+        <div class="register-link">还不是驴妈妈会员？<a href="./register.html">免费注册</a></div>
+
+        <div class="other-login">
+            <p>合作网站账号登录<span></span></p>
+            <div class="other-login-web">
+                <a href="#" class="qq"></a>
+                <a href="#" class="weixin"></a>
+                <a href="#" class="weibo"></a>
+                <a href="#" class="zhifubao"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bottom">
+    <div class="service">
+
+        <!-- 点击每个li时应该进行页面的跳转，需要在js中做？？？？   -->
+        <ul>
+            <li>
+                <span class="service-one"></span>
+                <p>
+                    <strong>价格保证</strong><br/>
+                    同类产品,保证低价
+                </p>
+            </li>
+            <li>
+                <span class="service-two"></span>
+                <p>
+                    <strong>价格保证</strong><br/>
+                    同类产品,保证低价
+                </p>
+            </li>
+            <li>
+                <span class="service-three"></span>
+                <p>
+                    <strong>价格保证</strong><br/>
+                    同类产品,保证低价
+                </p>
+            </li>
+            <li>
+                <span class="service-four"></span>
+                <p>
+                    <strong>价格保证</strong><br/>
+                    同类产品,保证低价
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="other">
+        <div class="other-top">
+            <a href="#">关于我们</a> |
+            <a href="#">联系我们</a> |
+            <a href="#">网站地图</a> |
+            <a href="#">酒店品牌</a> |
+            <a href="#">酒店查询</a> |
+            <a href="#">帮助中心</a> |
+            <a href="#">友情链接</a> |
+            <a href="#">诚聘英才</a> |
+            <a href="#">旅游度假资质</a> |
+            <a href="#">意见反馈</a> |
+            <a href="#">广告业务</a>
+        </div>
+        <div>
+            Copyright © 2016 www.mihu.com. 传播股份有限公司版权所有　沪ICP备1111111号-3　增值电信业务经营许可证编号：沪B2-20100030
+        </div>
+    </div>
+</div>
+
+
+<script>
+    window.onload = function () {
+
+        (function () {
+            var formId = document.getElementById("login-form-id");
+            var placeInputs = formId.getElementsByClassName("text-type");
+            var hints = formId.getElementsByClassName("hint");
+            var errorId = document.getElementById("login-error-id");
+
+            for (var i = 0; i < placeInputs.length; i++){
+                placeInputs[i].index = i;
+
+                placeInputs[i].firstElementChild.onfocus = function (e) {
+                    hints[this.parentNode.index].style.display = "none";
+                };
+
+                placeInputs[i].firstElementChild.onblur = function (e) {
+                    if (this.value == "") {
+                        hints[this.parentNode.index].style.display = "block";
+                    }
+                };
+
+                placeInputs[i].onclick = function (e) {
+                    hints[this.index].style.display = "none";
+                    this.firstElementChild.focus();
+                    errorId.style.visibility = "hidden";
+                };
+            }
+        })();
+
+        (function () {
+            var name = document.getElementById("username-id");
+            var passwd = document.getElementById("userpasswd-id");
+            var errorId = document.getElementById("login-error-id");
+            var submitBtn = document.getElementById("form-submit-id");
+            var errorId1 = document.getElementById("login-error-id-1");
+
+
+            addEvent(errorId1.firstElementChild, "click", function (e) {
+                this.parentNode.style.display = "none";
+            });
+
+            addEvent(submitBtn, "click", function(e){
+                if (name.value == ""  || passwd.value == ""){
+                    errorId.style.visibility = "visible";
+                    return;
+                }
+
+                var xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4){
+                        if (xhr.status == 200 || xhr.status == 304){
+                            if (xhr.responseText == "OK"){
+                                window.location.replace("./index.html");
+                            } else {
+                                //提示登录错误
+                                errorId1.style.display = "block";
+                            }
+                        }
+                    }
+                };
+
+                  //要指定对应的后台登录程序
+                  xhr.open("post", "../test.php", true)
+                  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                  xhr.send("name=" + name.value + "&passwd=" + passwd.value);
+
+            });
+        })();
+    };
+</script>
+</body>
+</html>

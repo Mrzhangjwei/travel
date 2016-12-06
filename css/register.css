@@ -1,0 +1,309 @@
+@charset "utf-8";
+
+
+/* 统一控制 a的颜色 */
+a.mystyle {
+    color: #09c;
+}
+
+a.mystyle:hover {
+    color: #ff6600;
+}
+
+.head {
+    height: 100px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.head-left {
+    float: left;
+    width: 267px;
+    height: 100px;
+    background: url("../images/index/index-icon.png") no-repeat center  center;
+}
+
+.head-center {
+    float: left;
+    width: 750px;
+    height: 100px;
+    font-size: 25px;
+    line-height: 100px;
+    color: #999999;
+}
+
+.head-center p span {
+    font-size: 30px;
+}
+.head-right {
+    float: right;
+    width: 160px;
+    height: 100px;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+
+.head-right > p {
+    font-family: "微软雅黑";
+    color: #999999;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.head-right p:nth-child(2){
+    font-size: 20px;
+    color: #4ab344;
+}
+
+
+.center {
+    height: 530px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.center-left {
+    float: left;
+    width: 800px;
+    height: 530px;
+    box-sizing: border-box;
+    padding-left: 100px;
+}
+
+.center-right {
+    width: 300px;
+    height: 100%;
+    border-left: 1px dashed lightgrey;
+    float: right;
+    background: url("../images/register/left.jpg") no-repeat;
+}
+
+
+
+.center-left form ul li {
+    height: 35px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+.center-left form ul li label {
+    float: left;
+}
+
+
+.center-left form ul li span {
+    color: #ff6600;
+}
+
+.center-left form ul li input {
+    height: 25px;
+    width: 240px;
+    padding-left: 10px;
+    box-shadow: 0 0 4px #CECECE inset;
+    border: 1px solid #abc;
+}
+
+.center-left form ul li > div {
+    float: left;
+    margin-left: 30px;
+}
+
+.center-left form ul li div.input-hint {
+    height: 30px;
+    line-height: 30px;
+    margin-left: 5px;
+    font-size: 12px;
+    display:  none;
+}
+
+.center-left form ul li.yanzheng input {
+    width: 120px;
+}
+
+
+.center-left form ul  div.yanzheng-pic {
+    width: 100px;
+    height: 32px;
+}
+
+.center-left form ul  div.yanzheng-pic img {
+    width: 100%;
+    height: 100%;
+}
+
+.center-left form ul  div.yanzheng-phone {
+    width: 100px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    background: #f5f5f5;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    color: #666;
+    cursor: pointer;
+}
+
+.center-left form ul  li.protocol {
+    font-size: 12px;
+    padding-left: 85px;
+}
+
+.center-left form ul  li.protocol input {
+    width: auto;
+    height: auto;
+}
+
+
+
+.center-left form div.form-submit,
+.center-left form div.direct-login {
+    padding-left: 85px;
+}
+
+.center-left form div.form-submit button {
+    display: block;
+    width: 250px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: center;
+    color: #fff;
+    background: #e38;
+    border: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.center-left form div.direct-login {
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+
+.center-left .other-login {
+    margin-top: 40px;
+    height: 60px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 800;
+    color: #666;
+    padding-left: 85px;
+}
+
+.center-left .other-login > p  {
+    position: relative;
+}
+
+.center-left .other-login .other-login-web {
+    width: 100%;
+    height: 25px;
+    margin-top: 10px;
+}
+
+.center-left .other-login-web a {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url("../images/login/other-login.png") no-repeat;
+}
+
+ .center-left .other-login-web a.qq {
+    background-position: 0 0;
+}
+
+ .center-left .other-login-web a.weixin {
+    background-position: 0 -262px;
+}
+
+.center-left .other-login-web a.weibo{
+    background-position: 0 -30px;
+}
+
+.center-left .other-login-web a.zhifubao{
+    background-position: 0 -132px;
+}
+
+
+
+.bottom {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bottom .service {
+    width: 1000px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+.bottom .service ul {
+    width: 1004px;
+    height: 40px;
+    padding: 15px 0;
+    border: 1px solid lightgrey;
+}
+
+.bottom .service ul li {
+    float:left;
+    padding: 0px 30px;
+    height: 40px;
+    width: 190px;
+    border-right: 1px solid lightgrey;
+    cursor: pointer;
+}
+
+.bottom .service ul li:last-child {
+    border: none;
+}
+
+.bottom .service li span {
+    float: left;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url("../images/login/bottom.png") no-repeat;
+}
+
+.bottom .service li p {
+    float: left;
+}
+
+.bottom .service li span.service-one {
+    background-position: -100px 0;
+}
+
+.bottom .service li span.service-two{
+    background-position: -150px 0;
+}
+
+.bottom .service li span.service-three{
+    background-position: -200px 0;
+}
+
+.bottom .service li span.service-four{
+    background-position: -250px 0;
+}
+
+.bottom .other {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.bottom .other-top {
+    margin-bottom: 5px;
+}
+
+.bottom .other-top a {
+    color: #666;
+}
+
+.bottom .other-top a:hover {
+    color: #f60;
+}

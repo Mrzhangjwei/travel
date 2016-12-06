@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发表游记</title>
+    <link rel="icon" href="./images/index/shortcut-icon.jpg" type="image/x-icon">
+    <script src="./js/jquery-3.1.0.min.js"></script>
+    <script src="./js/move.js"></script>
+    <script src="./js/addEvent.js"></script>
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <link rel="stylesheet" href="./css/write-note.css" type="text/css">
+    <link rel="stylesheet" href="./css/Font-Awesome/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="head w">
+    <div class="head-left"></div>
+    <div class="head-center">
+    </div>
+    <div class="head-right">
+        <p><span class="icon-phone" style="color: orange;"></span> 全国客服电话</p>
+        <p>400-004-8888</p>
+        <div class="head-right-login">
+            <a href="./login.html" class="head-right-login-a-1">请登录<span>|</span></a>
+            <a href="./register.html" class="head-right-login-a-2">免费注册</a>
+        </div>
+    </div>
+</div>
+
+<div class="banner">
+    <div class="banner-top">
+        <div class="banner-top-center w">
+            <ul class="clearfix" id="banner-top-center-ul">
+                <li><a href="./index.html">首页</a></li>
+                <li><a href="./route.html">精选路线</a></li>
+                <li><a href="./strategy.html">旅游攻略</a></li>
+                <li class="permanent"><a href="./travel-note.html">驴友游记</a></li>
+                <li class="banner-top-center-ul-li-5">
+                    <a href="#">关于我们</a>
+                    <div class="sub-menu" id="sub-menu-id">
+                        <div><a href="present.html">公司介绍</a></div>
+                        <div><a href="./contact.html">联系我们</a></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="note">
+    <div class="note-con  w">
+
+        <div class="note-con-head">
+            <h3><span></span>公告栏</h3>
+            <p><a href="#">第二季旅游达人招募啦！</a></p>
+            <p><a href="#">“惠”，即日起到16年12月08日发订单游记加前缀【一写就“惠”】精华游记最高可获得100元奖金，来写游记吧～</a></p>
+            <p><a href="#">生活“仕”旅行，发表前缀为【生活仕】游记，各种精选高品质好物等你来拿，还有千元现金购物券免费送~</a></p>
+        </div>
+
+        <div class="note-con-title">
+            <div class="title"></div>
+            <div class="content">
+               <div class="left">
+                   <p>游记标题：</p>
+                   <input id="travel-note-title" type="text"  placeholder="请输入标题">
+                   <span><b id="travel-note-title-num">0</b>/40</span>
+               </div>
+                <div class="right">
+                    <span>出游月份：</span>
+                    <input id="travel-note-month" type="text" readonly>
+                    <p class="right-click" id="right-click-id">选择月份</p>
+                    <i></i>
+                    <div class="right-click-item" id="right-click-item-id">
+                        <span>1月份</span>
+                        <span>2月份</span>
+                        <span>3月份</span>
+                        <span>4月份</span>
+                        <span>5月份</span>
+                        <span>6月份</span>
+                        <span>7月份</span>
+                        <span>8月份</span>
+                        <span>9月份</span>
+                        <span>10月份</span>
+                        <span>11月份</span>
+                        <span>12月份</span>
+                    </div>
+                </div>
+            </div>
+            <div class="preface">
+                <h3>前言(选填) : </h3>
+                <div class="preface-con">
+                    <textarea id="preface-con-text"></textarea>
+                    <p id="preface-con-click">说说你此行的整体感觉、行前准备...说啥都行...</p>
+                    <span><b id="preface-con-num">0</b>/2500</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="note-con-body clearfix">
+            <div class="left">
+                <div class="top">
+                    <input type="text" id="note-con-body-title">
+                    <span><b id="note-con-body-title-num">0</b>/40</span>
+                </div>
+                <div class="center">
+                    <textarea id="note-con-body-text"></textarea>
+                    <p>文章最后于<span id="note-con-body-time"></span>自动保存</p>
+                </div>
+            </div>
+            <div class="right">
+                <h4>游记图库 <span id="click-push-id"><i></i>上传图片</span></h4>
+                <div class="right-img"></div>
+                <ul>
+                    <li><i>1</i>可批量上传，单次最多50张</li>
+                    <li><i>2</i>单张照片宽度需大于600像素</li>
+                    <li><i>3</i>最大可达10MB</li>
+                </ul>
+
+                <div class="push-img" id="push-img-id">
+                    <p>上传图片</p>
+                    <div class="push-img-select">
+                        <div>点击选择图片<input id="input-img-select" type="file" multiple accept="image/*"></div>
+                        <p>单次最多50张，单张照片宽度需大于600像素，最大可达10MB</p>
+                    </div>
+                    <div class="confirm">
+                        <button class="btn-yes" id="btn-yes-id">确认</button>
+                        <button class="btn-no" id="btn-no-id">取消</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom"><button id="publish-id">发表游记</button></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="overmask" id="over-mask-id"></div>
+
+<div class="foot">
+    <div class="foot-bottom">
+        <div class="foot-bottom-one">
+            <span></span>
+        </div>
+        <div class="foot-bottom-two">
+            <p><span>Tourism</span> Design</p>
+            <p>
+                欢迎来到我们的网站，找到你喜欢的旅程！祝你有一个美好的旅途
+            </p>
+        </div>
+        <div class="foot-bottom-three">
+            <span></span>
+        </div>
+        <div class="foot-bottom-four">
+            <p>
+                <a href="#">首页</a>
+                <a href="#">关于我们</a>
+                <a href="#">联系我们</a>
+            </p>
+            <p>©2016 个人展示 版权所有</p>
+            <p>
+                <a href="#">手机版</a> |
+                <a href="#">本站使用凡科建站搭建</a> |
+                <a href="#">管理登录</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    window.onload = function (e) {
+        /*
+         * 导航栏的移动
+         * */
+        (function(){
+            var navUl = document.getElementById("banner-top-center-ul");
+            var navLis = navUl.getElementsByTagName("li");
+
+            navUl.onmouseout = function (e) {
+                for(var j = 0; j < navLis.length; j++){
+                    navLis[j].classList.remove("current");
+                }
+            };
+
+            for (var i = 0; i < navLis.length; i++) {
+                navLis[i].onmouseover = function (event) {
+                    for(var j = 0; j < navLis.length; j++){
+                        navLis[j].classList.remove("current");
+                    }
+                    this.classList.add("current");
+                }
+            }
+
+            var subMenu = document.getElementById("sub-menu-id");
+            for (var i = 0; i < subMenu.children.length; i++){
+                subMenu.children[i].onmouseover = function (e) {
+                    for(var j = 0; j < subMenu.children.length; j++){
+                        subMenu.children[j].classList.remove("current");
+                    }
+                    this.classList.add("current");
+                };
+            }
+        })();
+
+
+        (function () {
+            //月份的的显示和隐藏
+            $("#right-click-id").click(function (e) {
+                $(this).hide();
+                $("#right-click-item-id").slideToggle(500);
+            });
+
+            //月份保存
+            $("#right-click-item-id span").click(function (e) {
+                var str = $(this).text();
+                $("#travel-note-month").val(parseInt(str));
+                $("#right-click-item-id").slideUp(500);
+                $("#right-click-id").show().text(str);
+            });
+
+
+            /*
+            * 控制字数的函数
+            **/
+            function charControl(str, limit){
+                var num = 0;
+                var ret ;
+
+                for (var i = 0; i < str.length; i++){
+                    ret = str.charCodeAt(i);
+                    if (ret >= 0 && ret <= 127){
+                        num += 0.5;
+                    } else {
+                        num += 1;
+                    }
+
+                    if ((num = Math.ceil(num)) >= limit){
+                        break;
+                    }
+                }
+
+                if (num >= limit){
+                    num = limit;
+                }
+                var oldstr = str.substr(0, i+2);
+
+                return {
+                    num: num,
+                    value: oldstr
+                };
+            }
+
+            //控制输入的字数不多于40个
+            $("#travel-note-title").keyup(function (e) {
+
+                var ret = charControl($(this).val(), 40);
+                $(this).val(ret.value);
+                $("#travel-note-title-num").text(ret.num);
+            });
+
+
+            $("#preface-con-text").click(function (e) {
+                $("#preface-con-click").hide(100);
+            });
+
+            $("#preface-con-text").blur(function (e) {
+                if (!$(this).val()){
+                    $("#preface-con-click").show(100);
+                }
+            });
+
+            $("#preface-con-text").keyup(function (e) {
+                var ret = charControl($(this).val(), 2500);
+                $(this).val(ret.value);
+                $("#preface-con-num").text(ret.num);
+            });
+
+
+            $("#preface-con-click").click(function (e) {
+                $(this).hide(100);
+                $("#preface-con-text")[0].focus();
+            });
+
+
+
+            //图片的上传
+            $("#click-push-id").click(function (e) {
+                $("#push-img-id").show();
+                $("#over-mask-id").show();
+            });
+
+            $("#btn-no-id").click(function (e) {
+                $("#push-img-id").hide();
+                $("#over-mask-id").hide();
+            });
+
+            $("#btn-yes-id").click(function (e) {
+                var filePath = $("#input-img-select").val();
+                /*具体的文件上传，后续处理*/
+            });
+
+            $("#publish-id").click(function (e) {
+                var title = $("#travel-note-title").val();
+                var month = $("#travel-note-month").val();
+                var preface = $("#preface-con-text").val();
+                var bodyTitle = $("#note-con-body-title").val();
+                var body = $("#note-con-body-text").val();
+
+                $("#note-con-body-time").text(new Date().toLocaleString());
+            });
+
+        })();
+
+    };
+</script>
+</body>
+</html>

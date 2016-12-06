@@ -1,0 +1,865 @@
+@charset "utf-8";
+
+.load {
+    background: url("../images/load.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.head {
+    height: 130px;
+}
+
+.head-left {
+    float: left;
+    width: 267px;
+    height: 130px;
+    background: url("../images/index/index-icon.png") no-repeat center center;
+}
+
+.head-center {
+    float: left;
+    width: 750px;
+    height: 130px;
+}
+
+.head-right {
+    float: right;
+    width: 160px;
+    height: 130px;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+
+.head-right > p {
+    font-family: "微软雅黑";
+    color: #999999;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.head-right p:nth-child(2){
+    font-size: 20px;
+    color: #4ab344;
+}
+
+.head-right-login {
+    text-align: center;
+}
+
+
+.head-right-login-a-1 {
+    position: relative;
+    font-size: 13px;
+    color: #999999;
+    padding: 0 6px;
+}
+
+
+.head-right-login-a-1 > span {
+    position: absolute;
+    font-size: 12px;
+    top: -1px;
+    right: 0px;
+}
+
+.head-right-login-a-2 {
+    color: red ;
+    font-size: 15px;
+}
+
+.banner {
+    width: 100%;
+    /*height: 650px;*/
+}
+
+.banner-top {
+    height: 50px;
+    background:  #2d2d2d;
+}
+
+.banner-top-center {
+    height: 50px;
+}
+
+.banner-top-center ul {
+    width: 100%;
+    position: relative;
+}
+
+.banner-top-center ul li {
+    float: left;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.banner-top-center ul li.permanent {
+    background: #4ab344;
+}
+
+.banner-top-center > ul > li > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+}
+
+.banner-top-center ul li.current {
+    background: #4ab344;
+}
+
+.banner-top-center-ul-li-5 {
+    position: relative;
+}
+
+.banner-top-center-ul-li-5 .sub-menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+.banner-top-center-ul-li-5 .sub-menu a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+.banner-top-center-ul-li-5:hover .sub-menu{
+    display: block;
+    z-index: 100;
+}
+
+.banner-top-center-ul-li-5:hover .sub-menu div{
+    background: #2d2d2d;
+    margin-bottom: 5px;
+}
+.banner-top-center-ul-li-5:hover .sub-menu div.current{
+    background: #4ab344;
+}
+
+
+
+.banner-con {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-con-img {
+    width: 100%;
+}
+
+.banner-con-img ul {
+    height: 360px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-con-img ul li {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner-con-img ul li.current {
+    display: block;
+    left: 50%;
+    margin-left: -960px;
+
+}
+
+.banner-con-change {
+    position: absolute;
+    height: 71px;
+    width: 100%;
+    left: 0px;
+    top: 50%;
+    margin-top: -35px;
+}
+
+.banner-con-change-left {
+    float: left;
+    cursor: pointer;
+}
+.banner-con-change-right{
+    float: right;
+    cursor: pointer;
+}
+
+
+
+.custom-steps {
+    height: 120px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background: url("../images/customization/company_bg.png") no-repeat;
+    position: relative;
+}
+
+.custom-steps-btn {
+    width: 200px;
+    height: 72px;
+    position: absolute;
+    right: 40px;
+    top: 25px;
+}
+
+.custom-steps-btn a{
+    display: block;
+    width: 120px;
+    height: 20px;
+    background: #e38;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 10px 40px;
+    border-radius: 3px;
+}
+
+.custom-steps-btn p{
+    color: #666;
+    margin-top: 5px;
+    text-align: center;
+}
+
+
+.overmask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+
+.overmask.current {
+    display: block;
+}
+
+.travel {
+    width: 800px;
+    height: 750px;
+    border-top: 2px solid #e08;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -400px;
+    z-index: 101;
+    display: none;
+}
+
+.travel.current {
+    display: block;
+}
+
+.travel .head {
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 20px;
+    background: lightgrey;
+}
+
+.travel .head h3 {
+    float: left;
+}
+
+.travel .head-close {
+    float: right;
+    width: 12px;
+    height: 12px;
+    background: url("../images/customization/company_bg.png") no-repeat -270px -139px;
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+
+.travel .say {
+    margin-top: 15px;
+    font-size: 14px;
+    text-indent: 2em;
+    color: #666;
+}
+
+.travel form {
+    padding: 30px 100px;
+    font-size: 12px;
+    color: #666;
+}
+
+.travel form .type {
+    margin-bottom: 30px;
+}
+
+.travel form .type strong {
+    font-size: 14px;
+}
+
+.travel form .type strong i {
+    color: red;
+    font-size: 12px;
+}
+
+.travel form .type.date input {
+    display: inline-block;
+    width: 80px;
+    height: 28px;
+    padding: 0 5px;
+    border: 1px solid lightgrey;
+}
+
+.travel form .type.common input {
+    display: inline-block;
+    width: 190px;
+    height: 28px;
+    padding: 0 5px;
+    border: 1px solid lightgrey;
+}
+
+
+.travel form .type.yusuan strong{
+    padding-left: 28px;
+}
+
+.travel form .type.yusuan span{
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.travel form .type.other input{
+    width: 400px;
+}
+
+.travel form  .line{
+    height: 1px;
+    background: lightgrey;
+    margin-bottom: 20px;
+}
+
+
+.travel form .type.contact strong{
+    padding-left: 14px;
+}
+
+.travel form .type.phone strong,
+.travel form .type.email strong{
+    padding-left: 28px;
+}
+
+
+.travel form .error {
+    margin-top: 20px;
+    padding-left: 83px;
+    margin-bottom: 20px;
+    visibility: hidden;
+}
+
+.travel form .error span {
+    color: red;
+}
+
+
+.travel form .btn {
+    padding-left: 83px;
+    height: 40px;
+}
+
+.travel form .btn button {
+    width: 95px;
+    height: 40px;
+    text-align: center;
+    line-height:40px;
+    color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius:5px;
+    float: left;
+    border: none;
+    background: #e38;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.travel form .btn p {
+    float: left;
+    margin-left: 20px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+}
+
+.travel form .btn p span {
+    color: #ff6600;
+}
+
+
+
+.common {
+    margin-bottom: 20px;
+}
+
+.common-head {
+    height: 45px;
+    line-height: 45px;
+}
+
+.common-head h2,
+.common-head p {
+    float: left;
+}
+
+.common-head p {
+    color: #666;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.common-items-head {
+    height: 36px;
+    border-bottom: 2px solid lightgrey;
+}
+
+.common-items-head ul li {
+    float: left;
+    height: 26px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+    position: relative;
+}
+
+.common-items-head ul li i {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: url("../images/customization/company_bg.png") 17px -130px;
+    position: absolute;
+    left: 50%;
+    margin-left: -4px;
+    bottom: -4px;
+    visibility: hidden;
+}
+
+.common-items-head ul li:hover {
+    color: #e38;
+}
+
+.common-items-head ul li.current {
+    border-bottom: 2px solid #e38;
+    color: #e38;
+}
+
+.common-items-head ul li.current i {
+    visibility: visible;
+}
+
+.common-items-show {
+    height: 250px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.common-items-show .sub-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: none;
+}
+
+.common-items-show .sub-item.current {
+    display: block;
+}
+
+.common-items-show .sub-item ul li {
+    float: left;
+    margin-right: 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.common-items-show .sub-item ul li:hover {
+    top: -10px;
+}
+
+
+.common-items-show .sub-item ul li:last-child {
+    margin-right: 0px;
+}
+
+
+.common-items-show .sub-item .sub-item-img{
+    position: relative;
+    overflow: hidden;
+}
+
+.common-items-show .sub-item .sub-item-img p{
+    height: 50px;
+    padding-left: 5px;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    color: #fff;
+    font-size: 12px;
+    background: rgba(0,0,0,0.5);
+    transition: all 0.5s;
+}
+
+.common-items-show .sub-item li:hover .sub-item-img p {
+    bottom: 0px;
+}
+
+
+.common-items-show .sub-item .sub-item-con {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.common-items-show .sub-item .sub-item-con a {
+    color: #000;
+}
+
+.common-items-show .sub-item .sub-item-con a:hover {
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+
+.common .per-items {
+    height: 120px;
+    padding-top: 20px;
+    border-top: 1px solid lightgrey;
+}
+
+.common .per-items ul li {
+    float: left;
+    position: relative;
+    margin-right: 20px;
+    font-size: 14px;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+}
+
+.common .per-items ul li:hover {
+    top: -10px;
+}
+
+.common  .per-items ul li:last-child {
+    margin-right: 0px;
+}
+
+.common .per-items ul li a {
+    color: #fff;
+}
+
+.common .per-items ul li p {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    height: 40px;
+    background: rgba(0,0,0,0.5);
+}
+
+.common .per-items ul li p:hover a {
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+
+
+#personal-items-show-id .sub-item ,
+#personal-items-show-id-1 .sub-item {
+    left: 125px;
+}
+
+
+#personal-items-show-id .sub-item ul li,
+#personal-items-show-id-1 .sub-item ul li{
+    margin-right: 10px;
+}
+
+#personal-items-show-id .sub-item ul li img ,
+#personal-items-show-id-1 .sub-item ul li img {
+    width: 258px;
+    height: auto;
+}
+
+.common-special {
+    margin-bottom: 0px;
+}
+
+#personal-items-show-id-1  .depart {
+    position: absolute;
+    left: -25px;
+}
+
+#cooperation-items-show-id .sub-item li img {
+    width: 285px;
+    height: 190px;
+}
+
+
+.why-us {
+    margin-bottom: 30px;
+}
+
+.why-us .head {
+    height: 1px;
+    background: lightgrey;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.why-us .head h2 {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: 50%;
+    margin-top: -20px;
+}
+
+.why-us .ad {
+    height: 80px;
+}
+
+
+
+.why-us .ad ul li {
+    float: left;
+    width: 280px;
+    height: 80px;
+    margin-left: 20px;
+}
+
+.why-us .ad ul div.left {
+    float: left;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: url("../images/customization/why_icon.png") no-repeat 0px 0px;
+}
+
+.why-us .ad ul  div.right{
+    width: 190px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+.why-us .ad ul  div.right h2{
+    margin-bottom: 5px;
+}
+
+.why-us .ad ul div.one {
+    background-position:  0 0;
+}
+
+.why-us .ad ul  div.two{
+    background-position:  0  -80px;
+}
+
+.why-us .ad ul  div.three{
+    background-position:  0 -160px;
+}
+
+.why-us .ad ul  div.four{
+    background-position:  0 -240px;
+}
+
+
+
+.service {
+    width: 1200px;
+    height: 70px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.service ul {
+    width: 1204px;
+    height: 40px;
+    padding: 15px 0;
+    border: 1px solid lightgrey;
+}
+
+.service ul li {
+    float:left;
+    padding: 0px 30px;
+    height: 40px;
+    width: 240px;
+    border-right: 1px solid lightgrey;
+    cursor: pointer;
+}
+
+.service ul li:last-child {
+    border: none;
+}
+
+.service li span {
+    float: left;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url("../images/login/bottom.png") no-repeat;
+}
+
+.service li p {
+    float: left;
+    margin-left: 5px;
+    width: 195px;
+    font-size: 13px;
+    color: #666;
+
+}
+
+.service li p  strong{
+    font-size: 18px;
+}
+
+.service li span.service-one {
+    background-position: -100px 0;
+}
+
+.service li span.service-two{
+    background-position: -150px 0;
+}
+
+.service li span.service-three{
+    background-position: -200px 0;
+}
+
+.service li span.service-four{
+    background-position: -250px 0;
+}
+
+
+.foot-bottom {
+    height: 300px;
+    background: #2d2d2d;
+    position: relative;
+    font-family: "微软雅黑";
+}
+
+.foot-bottom > div {
+    position: absolute;
+    width: 470px;
+    left: 50%;
+    margin-left: -235px;
+    text-align: center;
+    color: #fff;
+}
+
+
+.foot-bottom-one span,
+.foot-bottom-three span  {
+    display: inline-block;
+    width: 1px;
+    height: 80px;
+    position: absolute;
+    background: #999999;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);;
+}
+
+.foot-bottom-one span {
+    right: 200px;
+}
+
+.foot-bottom-two {
+    top: 80px;
+}
+
+.foot-bottom-two p:nth-child(1) {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.foot-bottom-two p:nth-child(1) span {
+    font-size: 30px;
+    color: #4ab344;
+}
+
+.foot-bottom-three {
+    top: 150px;
+}
+
+.foot-bottom-three span{
+    left: 137px;
+}
+
+.foot-bottom-four {
+    bottom: 10px;
+}
+
+.foot-bottom-four p {
+    text-align: center;
+    color: #999999;
+}
+
+.foot-bottom-four p a {
+    color: #999999;
+    text-decoration: underline;
+}
+
+.foot-bottom-four p a:hover {
+    color: red;
+}
+
+
+.back {
+    width: 50px;
+    height: 68px;
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    display: none;
+}
+
+.back.current {
+    display: block;
+}
+
+.back-close {
+    width: 50px;
+    height: 18px;
+    background: url("../images/customization/close.png") no-repeat  0 0;
+}
+
+.back-top {
+    width: 50px;
+    height: 50px;
+    background: url("../images/customization/back.png") no-repeat left bottom;
+    cursor: pointer;
+    position: absolute;
+    top: 18px;
+}
+
+

@@ -1,0 +1,695 @@
+@charset "utf-8";
+
+
+.head {
+    height: 130px;
+    /*border: 1px solid red;*/
+}
+
+.head-left {
+    float: left;
+    width: 267px;
+    height: 130px;
+    background: url("../images/index/index-icon.png") no-repeat center center;
+}
+
+.head-center {
+    float: left;
+    width: 750px;
+    height: 130px;
+}
+
+.head-right {
+    float: right;
+    width: 160px;
+    height: 130px;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+
+.head-right > p {
+    font-family: "微软雅黑";
+    color: #999999;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.head-right p:nth-child(2){
+    font-size: 20px;
+    color: #4ab344;
+}
+
+.head-right-login {
+    text-align: center;
+}
+
+
+.head-right-login-a-1 {
+    position: relative;
+    font-size: 13px;
+    color: #999999;
+    padding: 0 6px;
+}
+
+
+.head-right-login-a-1 > span {
+    position: absolute;
+    font-size: 12px;
+    top: -1px;
+    right: 0px;
+}
+
+.head-right-login-a-2 {
+    color: red ;
+    font-size: 15px;
+}
+
+
+
+.banner {
+    width: 100%;
+    /*height: 650px;*/
+}
+
+.banner-top {
+    height: 50px;
+    background:  #2d2d2d;
+}
+
+.banner-top-center {
+    height: 50px;
+}
+
+.banner-top-center ul {
+    width: 100%;
+    position: relative;
+}
+
+.banner-top-center ul li {
+    float: left;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.banner-top-center ul li.permanent {
+    background: #4ab344;
+}
+
+.banner-top-center > ul > li > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+}
+
+.banner-top-center ul li.current {
+    background: #4ab344;
+}
+
+.banner-top-center-ul-li-5 {
+    position: relative;
+}
+
+.banner-top-center-ul-li-5 .sub-menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+.banner-top-center-ul-li-5 .sub-menu a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+.banner-top-center-ul-li-5:hover .sub-menu{
+    display: block;
+    z-index: 100;
+}
+
+.banner-top-center-ul-li-5:hover .sub-menu div{
+    background: #2d2d2d;
+    margin-bottom: 5px;
+}
+.banner-top-center-ul-li-5:hover .sub-menu div.current{
+    background: #4ab344;
+}
+
+
+.note {
+    margin-bottom: 40px;
+    color: #666;
+    background: url("../images/write-note/travel-notes.jpg") no-repeat;
+}
+
+.note-con {
+    padding-top: 30px;
+}
+
+.note-con-head {
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.note-con-head  h3{
+    margin-bottom: 5px;
+}
+
+.note-con-head h3  span{
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    background: url("../images/write-note/travel_view.png") no-repeat  -112px 0;
+}
+
+.note-con-head p {
+    margin-bottom: 5px;
+}
+
+.note-con-head p a {
+    color: #666;
+    font-size: 13px;
+}
+
+.note-con-head p a:hover {
+    color: #FF6600;
+    text-decoration: underline;
+}
+
+
+.note-con-title .title {
+    width: 500px;
+    height: 82px;
+    background: url("../images/write-note/travel-img.jpg") no-repeat ;
+}
+
+.note-con-title .content{
+    height: 48px;
+    border: 1px solid lightgrey;
+    background: #fff;
+    font-family: "微软雅黑";
+}
+
+.note-con-title .content .left{
+    height: 100%;
+    width: 897px;
+    float: left;
+    border-right: 1px solid lightgrey;
+}
+
+.note-con-title .content .left p{
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 18px;
+    padding: 15px 10px;
+}
+
+.note-con-title .content .left input {
+    float: left;
+    width: 648px;
+    height: 22px;
+    font-size: 16px;
+    padding: 13px 0px;
+    border: none;
+    outline: none;
+}
+
+.note-con-title .content .left span {
+    float: right;
+    width: 60px;
+    height: 18px;
+    padding: 13px 10px;
+}
+
+.note-con-title .content .left span b {
+    color: #ff6600;
+}
+
+.note-con-title .content .right{
+    width: 300px;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.note-con-title .content .right  > span{
+    display: inline-block;
+    width: 82px;
+    height: 18px;
+    line-height:18px;
+    padding: 15px 5px;
+    font-weight: bold;
+    float: left;
+}
+
+.note-con-title .content .right  input {
+    float: left;
+    width: 208px;
+    height: 18px;
+    padding: 15px 0;
+    border: none;
+    outline: none;
+    visibility: hidden;
+}
+
+.note-con-title .content .right  .right-click{
+    position: absolute;
+    top: 0;
+    left: 92px;
+    width: 208px;
+    height: 18px;
+    line-height: 18px;
+    padding: 15px 0px;
+    cursor: pointer;
+}
+
+.note-con-title .content .right i {
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+    right: 18px;
+    width: 0;
+    height: 0;
+    border: 6px solid gray;
+    border-color: gray transparent transparent transparent;
+}
+
+
+
+.note-con-title .content  .right-click-item {
+    position: absolute;
+    width: 300px;
+    left: -1px;
+    top: 48px;
+    border: 1px solid lightgrey;
+    border-top: none;
+    display: none;
+    z-index: 1;
+    background: #fff;
+}
+
+.note-con-title .content  .right-click-item span {
+    display: block;
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.note-con-title .content  .right-click-item span:hover {
+    background: lightpink;
+}
+
+
+.note-con-title .preface {
+    margin-top: 40px;
+}
+
+.note-con-title .preface h3 {
+    color: #666;
+    font-weight: normal;
+    padding: 7px 0;
+}
+
+.note-con-title .preface-con  {
+    height: 100px;
+    padding: 0 10px;
+    border: 1px solid lightgrey;
+    position: relative;
+}
+
+.note-con-title .preface-con > textarea  {
+    width: 100%;
+    height: 70px;
+    padding: 5px 0;
+    border: none;
+    outline: none;
+    resize: none;
+    overflow: auto;
+}
+
+.note-con-title .preface-con  > p{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+
+.note-con-title .preface-con  > span {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.note-con-title .preface-con  > span b {
+    color: #FF6600;
+}
+
+
+.note-con .note-con-body {
+    margin-top: 40px;
+}
+
+.note-con .note-con-body .left {
+    width: 790px;
+    height: 580px;
+    padding: 10px 10px 10px 50px;
+    border: 1px solid lightgrey;
+    background: #f5f5f5;
+    float: left;
+}
+
+.note-con .note-con-body .right{
+    float: right;
+    width: 300px;
+    height: 500px;
+    background: #f5f5f5;
+    border: 1px solid lightgrey;
+}
+
+
+
+.note-con .note-con-body .left .top {
+    height: 40px;
+    border: 1px solid lightgrey;
+    background: #fff;
+}
+
+.note-con .note-con-body .left .top input {
+    height: 20px;
+    width: 640px;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.note-con .note-con-body .left .top > span {
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 8px;
+}
+
+.note-con .note-con-body .left .top > span b {
+    color: #FF6600;
+}
+
+.note-con .note-con-body .left .center{
+    height: 500px;
+    margin-top: 30px;
+    background: #fff;
+}
+
+.note-con .note-con-body .left .center textarea{
+    width: 770px;
+    padding: 10px 10px 0 10px;
+    height: 460px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.note-con .note-con-body .left .center p{
+    float: right;
+    height: 30px;
+    padding-right: 20px;
+    line-height: 30px;
+    font-size: 13px;
+}
+
+.note-con .note-con-body .bottom {
+    width: 850px;
+    height: 45px;
+    float: left;
+    margin-top: 10px;
+}
+
+.note-con .note-con-body .bottom button {
+    width: 150px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 20px;
+    color: #fff;
+    background: #ee3388;
+    border-radius: 5px;
+    border: none;
+    float: right;
+    cursor: pointer;
+}
+
+
+
+.note-con .note-con-body .right h4 {
+    padding: 10px;
+    font-weight: normal;
+}
+
+.note-con-body .right h4 span{
+    float: right;
+    height: 22px;
+    padding: 2px 5px;
+    background: #ee3388;
+    line-height: 22px;
+    font-size: 12px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.note-con-body .right h4 span > i{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: url("../images/write-note/travel_view.png") no-repeat -140px -17px;
+}
+
+
+
+.note-con-body .right .right-img {
+    width: 100%;
+    height: 86px;
+    background: url("../images/write-note/travel_picture.png") no-repeat top center ;
+    margin-top:  80px;
+    margin-bottom: 10px;
+}
+
+.note-con-body .right > ul {
+    font-size: 14px;
+    padding-left: 50px;
+}
+
+.note-con-body .right > ul li {
+    height:  18px;
+    line-height: 18px;
+}
+
+.note-con-body .right > ul li i {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    background: #777;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.note-con-body .right  .push-img{
+    position: fixed;
+    width: 650px;
+    height: 450px;
+    top: 50px;
+    left: 50%;
+    margin-left: -325px;
+    background: #fff;
+    z-index: 889;
+    display: none;
+}
+
+.note-con-body .right  .push-img > p{
+    background: #f5f5f5;
+    padding: 5px;
+}
+
+.note-con-body .right  .push-img-select {
+    width: 610px;
+    height: 350px;
+    border: 1px solid  lightgrey;
+    margin: 20px auto;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.note-con-body .right  .push-img-select > div{
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    margin-left: -75px;
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+    color: #fff;
+    background: #ee3388;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.note-con-body .right  .push-img-select > div input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.note-con-body .right  .push-img-select > p{
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    top: 180px;
+}
+
+.note-con-body .right  .push-img .confirm{
+    text-align: center;
+    padding-top: 5px;
+}
+
+.note-con-body .right  .push-img .confirm button {
+    display: inline-block;
+    width: 88px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 18px;
+    color: #666;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.note-con-body .right  .push-img .confirm .btn-yes {
+    background: #FF8800;
+    color: #fff;
+}
+
+.overmask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    z-index: 888;
+    display: none;
+
+}
+
+
+.foot {
+    margin-top: 500px;
+}
+
+
+.foot-bottom {
+    height: 300px;
+    background: #2d2d2d;
+    position: relative;
+    font-family: "微软雅黑";
+}
+
+.foot-bottom > div {
+    position: absolute;
+    width: 470px;
+    left: 50%;
+    margin-left: -235px;
+    text-align: center;
+    color: #fff;
+}
+
+
+.foot-bottom-one span,
+.foot-bottom-three span  {
+    display: inline-block;
+    width: 1px;
+    height: 80px;
+    position: absolute;
+    background: #999999;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);;
+}
+
+.foot-bottom-one span {
+    right: 200px;
+}
+
+.foot-bottom-two {
+    top: 80px;
+}
+
+.foot-bottom-two p:nth-child(1) {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.foot-bottom-two p:nth-child(1) span {
+    font-size: 30px;
+    color: #4ab344;
+}
+
+.foot-bottom-three {
+    top: 150px;
+}
+
+.foot-bottom-three span{
+    left: 137px;
+}
+
+.foot-bottom-four {
+    bottom: 10px;
+}
+
+.foot-bottom-four p {
+    text-align: center;
+    color: #999999;
+}
+
+.foot-bottom-four p a {
+    color: #999999;
+    text-decoration: underline;
+}
+
+.foot-bottom-four p a:hover {
+    color: red;
+}
+
+
+
+
+
+
+

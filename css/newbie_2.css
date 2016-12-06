@@ -1,0 +1,403 @@
+@charset "utf-8";
+
+
+.head {
+    height: 130px;
+    /*border: 1px solid red;*/
+}
+
+.head-left {
+    float: left;
+    width: 267px;
+    height: 130px;
+    background: url("../images/index/index-icon.png") no-repeat center center;
+}
+
+.head-center {
+    float: left;
+    width: 750px;
+    height: 130px;
+}
+
+.head-right {
+    float: right;
+    width: 160px;
+    height: 130px;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+
+.head-right > p {
+    font-family: "微软雅黑";
+    color: #999999;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.head-right p:nth-child(2){
+    font-size: 20px;
+    color: #4ab344;
+}
+
+.head-right-login {
+    text-align: center;
+}
+
+
+.head-right-login-a-1 {
+    position: relative;
+    font-size: 13px;
+    color: #999999;
+    padding: 0 6px;
+}
+
+
+.head-right-login-a-1 > span {
+    position: absolute;
+    font-size: 12px;
+    top: -1px;
+    right: 0px;
+}
+
+.head-right-login-a-2 {
+    color: red ;
+    font-size: 15px;
+}
+
+
+
+.banner {
+    width: 100%;
+    /*height: 650px;*/
+}
+
+.banner-top {
+    height: 50px;
+    background:  #2d2d2d;
+}
+
+.banner-top-center {
+    height: 50px;
+}
+
+.banner-top-center ul {
+    width: 100%;
+    position: relative;
+}
+
+.banner-top-center ul li {
+    float: left;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.banner-top-center ul li.permanent {
+    background: #4ab344;
+}
+
+.banner-top-center > ul > li > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+}
+
+.banner-top-center ul li.current {
+    background: #4ab344;
+}
+
+.banner-top-center-ul-li-5 {
+    position: relative;
+}
+
+.banner-top-center-ul-li-5 .sub-menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+.banner-top-center-ul-li-5 .sub-menu a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+.banner-top-center-ul-li-5:hover .sub-menu{
+    display: block;
+    z-index: 100;
+}
+
+.banner-top-center-ul-li-5:hover .sub-menu div{
+    background: #2d2d2d;
+    margin-bottom: 5px;
+}
+.banner-top-center-ul-li-5:hover .sub-menu div.current{
+    background: #4ab344;
+}
+
+
+
+.nav-bar {
+    height: 48px;
+    border: 1px solid #00a7e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 30px 0 25px;
+}
+
+.nav-bar > a {
+    display: inline-block;
+    padding: 0 35px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 18px;
+    color: #00a7e0;
+    font-weight: bold;
+    border-left: 1px solid #00a7e0;
+    margin-left: -1px;
+    float: left;
+}
+
+.nav-bar > a.current{
+    background: #00a7e0;
+    color: #fff;
+}
+
+.nav-con-1 {
+    padding-bottom: 20px;
+    background: url("../images/newbie/bg_1.png") no-repeat right bottom;
+    color: #00a7e0;
+}
+
+.nav-con-1 > h2 {
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.nav-con-2 {
+    margin-top: 20px;
+}
+
+.nav-con-2 > h2 {
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.nav-con-2 > ul li {
+    float: left;
+    width: 500px;
+    height: 112px;
+    padding: 30px;
+    border: 1px solid #f6f6f6;
+    border-radius: 6px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+
+.nav-con-2 > ul li:hover {
+    border: 1px solid #00a7e0;
+}
+
+.nav-con-2 > ul li .left {
+    float: left;
+    width: 140px;
+    height: 100%;
+    background: url("../images/newbie/nav-1/bg_helpall.png") no-repeat;
+}
+
+
+.nav-con-2 > ul li .right{
+    float: left;
+    width: 360px;
+    color: #666;
+    font-size: 14px;
+}
+
+.nav-con-2 > ul li .right p:first-child{
+    font-size: 30px;
+}
+
+.nav-con-2 > ul li .right p:first-child a{
+    float: right;
+    font-size: 14px;
+    color: #00a7e0;
+    padding-top: 10px;
+}
+
+.nav-con-2 > ul li .right p:nth-child(2) a{
+    cursor: pointer;
+    color: #00a7e0;
+}
+
+.nav-con-2 > ul li .right p:nth-child(2) a:hover {
+    color: #FF6600;
+    text-decoration: underline;
+}
+
+.nav-con-2 > ul li .right p:first-child a:hover{
+    text-decoration: underline;
+}
+
+
+.nav-con-2 > ul li:nth-child(1) .left {
+    background-position: 0px 1px;
+}
+
+.nav-con-2 > ul li:nth-child(2) .left {
+    background-position: -180px 0;
+}
+
+.nav-con-2 > ul li:nth-child(3) .left {
+    background-position: 0px -103px;
+}
+
+.nav-con-2 > ul li:nth-child(4) .left {
+    background-position: -180px -87px;
+}
+
+.nav-con-2 > ul li:nth-child(5) .left {
+    background-position: 0px -210px;
+}
+
+.nav-con-2 > ul li:nth-child(6) .left {
+    background-position: 0px -322px;
+}
+
+.nav-con-2 > ul li:nth-child(7) .left {
+    background-position: -180px -323px;
+}
+
+
+.nav-con-3 {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.nav-con-3 > h2 {
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.nav-con-3  a {
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    border: none;
+    border-radius: 7px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #00b3ee;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.foot-bottom {
+    height: 300px;
+    background: #2d2d2d;
+    position: relative;
+    font-family: "微软雅黑";
+}
+
+.foot-bottom > div {
+    position: absolute;
+    width: 470px;
+    left: 50%;
+    margin-left: -235px;
+    text-align: center;
+    color: #fff;
+}
+
+
+.foot-bottom-one span,
+.foot-bottom-three span  {
+    display: inline-block;
+    width: 1px;
+    height: 80px;
+    position: absolute;
+    background: #999999;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);;
+}
+
+.foot-bottom-one span {
+    right: 200px;
+}
+
+.foot-bottom-two {
+    top: 80px;
+}
+
+.foot-bottom-two p:nth-child(1) {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.foot-bottom-two p:nth-child(1) span {
+    font-size: 30px;
+    color: #4ab344;
+}
+
+.foot-bottom-three {
+    top: 150px;
+}
+
+.foot-bottom-three span{
+    left: 137px;
+}
+
+.foot-bottom-four {
+    bottom: 10px;
+}
+
+.foot-bottom-four p {
+    text-align: center;
+    color: #999999;
+}
+
+.foot-bottom-four p a {
+    color: #999999;
+    text-decoration: underline;
+}
+
+.foot-bottom-four p a:hover {
+    color: red;
+}
+
+
+
+
+

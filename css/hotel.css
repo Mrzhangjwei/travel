@@ -1,0 +1,714 @@
+@charset "utf-8";
+
+
+.head {
+    height: 130px;
+    /*border: 1px solid red;*/
+}
+
+.head-left {
+    float: left;
+    width: 267px;
+    height: 130px;
+    background: url("../images/index/index-icon.png") no-repeat center center;
+}
+
+.head-center {
+    float: left;
+    width: 750px;
+    height: 130px;
+}
+
+.head-right {
+    float: right;
+    width: 160px;
+    height: 130px;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+
+.head-right > p {
+    font-family: "微软雅黑";
+    color: #999999;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.head-right p:nth-child(2){
+    font-size: 20px;
+    color: #4ab344;
+}
+
+.head-right-login {
+    text-align: center;
+}
+
+
+.head-right-login-a-1 {
+    position: relative;
+    font-size: 13px;
+    color: #999999;
+    padding: 0 6px;
+}
+
+
+.head-right-login-a-1 > span {
+    position: absolute;
+    font-size: 12px;
+    top: -1px;
+    right: 0px;
+}
+
+.head-right-login-a-2 {
+    color: red ;
+    font-size: 15px;
+}
+
+.banner {
+    width: 100%;
+    /*height: 650px;*/
+}
+
+.banner-top {
+    height: 50px;
+    background:  #2d2d2d;
+}
+
+.banner-top-center {
+    height: 50px;
+}
+
+.banner-top-center ul {
+    width: 100%;
+    position: relative;
+}
+
+.banner-top-center ul li {
+    float: left;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.banner-top-center ul li.permanent {
+    background: #4ab344;
+}
+
+.banner-top-center > ul > li > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+}
+
+.banner-top-center ul li.current {
+    background: #4ab344;
+}
+
+.banner-top-center-ul-li-5 {
+    position: relative;
+}
+
+.banner-top-center-ul-li-5 .sub-menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+.banner-top-center-ul-li-5 .sub-menu a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+.banner-top-center-ul-li-5:hover .sub-menu{
+    display: block;
+    z-index: 100;
+}
+
+.banner-top-center-ul-li-5:hover .sub-menu div{
+    background: #2d2d2d;
+    margin-bottom: 5px;
+}
+.banner-top-center-ul-li-5:hover .sub-menu div.current{
+    background: #4ab344;
+}
+
+
+
+.banner-con {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-con-img {
+    width: 100%;
+}
+
+.banner-con-img ul {
+    height: 435px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-con-img ul li {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner-con-img ul li.current {
+    display: block;
+    left: 50%;
+    margin-left: -960px;
+
+}
+
+.banner-con-change {
+    position: absolute;
+    height: 71px;
+    width: 100%;
+    left: 0px;
+    top: 50%;
+    margin-top: -35px;
+}
+
+.banner-con-change-left {
+    float: left;
+    cursor: pointer;
+}
+.banner-con-change-right{
+    float: right;
+    cursor: pointer;
+}
+
+
+
+
+.vacation {
+    width: 100%;
+    height: 455px;
+    padding: 50px 0;
+    background: #f7f7f7;
+}
+
+.vacation > h3 {
+    color: #333;
+    font-weight: normal;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.vacation-con .left {
+    width: 285px;
+    min-height: 318px;
+    float: left;
+    position: relative;
+}
+
+.vacation-con .left img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.vacation-con .left img.current {
+    display: block;
+}
+
+.vacation-con .left  ul{
+    position: relative;
+    padding: 38px 0 0 104px;
+}
+
+.vacation-con .left  ul li{
+    width: 160px;
+    height: 25px;
+    background: url("../images/hotel/tip-icon.png") no-repeat 0 -170px;
+    text-align: center;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    border-radius:13px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.vacation-con .left  ul li i{
+    position: absolute;
+    top: 8px;
+    right: 13px;
+    width: 0px;
+    height: 0px;
+    border: 5px solid #fff;
+    border-color: transparent transparent transparent #fff;
+    display: none;
+}
+
+.vacation-con .left  ul li.current {
+    background-position: 0 -195px;
+}
+
+.vacation-con .left  ul li.current i{
+    display: block;
+}
+
+
+
+.vacation-con .right {
+    width: 914px;
+    height: 318px;
+    border: 1px solid lightgrey;
+    border-left: none;
+    float: left;
+    position: relative;
+}
+
+
+.vacation-con .right .sub-item {
+    position: absolute;
+    width: 882px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 0 16px;
+    color: #666;
+    display: none;
+}
+
+.vacation-con .right .sub-item.current {
+    display: block;
+}
+
+.vacation-con .right .sub-item h3 {
+    font-weight: normal;
+    margin-top: 20px;
+    color: #000;
+}
+
+.vacation-con .right .sub-item-head {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.vacation-con .right .sub-item-head p {
+    float: left;
+}
+
+.vacation-con .right .sub-item-head a {
+    float: right;
+    color: #666;
+}
+
+.vacation-con .right .sub-item-head a:hover {
+    color: #FF6600;
+}
+
+.vacation-con .right .sub-item ul li{
+    width: 285px;
+    height: 218px;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+}
+
+.vacation-con .right .sub-item ul li:hover{
+    top: -10px;
+}
+
+.vacation-con .right .sub-item ul li:last-child{
+    margin-right: 0;
+}
+
+.vacation-con .right .sub-item ul li > a{
+    display: block;
+}
+
+.vacation-con .right .sub-item-desc > a{
+    float: left;
+    color: #000;
+}
+
+.vacation-con .right .sub-item-desc > a:hover {
+    color: #FF6600;
+    text-decoration: underline;
+}
+
+
+.vacation-con .right .sub-item-desc > span{
+    float: right;
+    color: #FF6600;
+}
+
+
+.hotel {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.hotel > h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: normal;
+    color: #666;
+}
+
+.hotel-head {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.hotel-head li {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.hotel-head li.current {
+    color: #FF6600;
+}
+
+.hotel-con {
+    height: 218px;
+    position: relative;
+}
+
+
+.common-sub-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.common-sub-item.current {
+    display: block;
+}
+
+.common-sub-item ul li {
+    width: 285px;
+    height: 218px;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+}
+
+.common-sub-item ul li:hover{
+    top: -10px;
+}
+
+
+.common-sub-item    .sub-item-desc > a{
+    float: left;
+    color: #000;
+}
+
+.common-sub-item    .sub-item-desc > a:hover{
+    color: #FF6600;
+    text-decoration: underline;
+}
+
+
+.common-sub-item   .sub-item-desc > span{
+    float: right;
+    color: #FF6600;
+}
+
+
+
+
+
+.theme {
+    height: 750px;
+    background: #f7f7f7;
+    margin-bottom: 50px;
+}
+
+.theme > h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: normal;
+    color: #666;
+    padding: 20px 0;
+}
+
+.theme-head {
+    text-align: center;
+    color: #666;
+}
+
+.theme-head li {
+    display: inline-block;
+    width: 80px;
+    height: 115px;
+    margin-right: 50px;
+    cursor: pointer;
+    position: relative;
+}
+
+.theme-head li >img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.theme-head li > p{
+    position: absolute;
+    width: 80px;
+    text-align: center;
+    bottom: 0;
+}
+
+.theme-head li .two-img {
+    display: none;
+}
+
+.theme-head li.current .two-img {
+    display: block;
+}
+
+.theme-head li.current .one-img {
+    display: none;
+}
+
+
+.theme-con {
+    height: 460px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.theme-con .common-sub-item ul li {
+    margin-bottom: 10px;
+}
+
+
+.cooperation {
+    margin-bottom: 50px;
+}
+
+.cooperation > h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: normal;
+    color: #666;
+    padding: 20px 0;
+}
+
+.cooperation .brand {
+    padding: 0px 15px;
+    height: 75px;
+    position: relative;
+}
+
+.cooperation .brand-left {
+    display: inline-block;
+    width: 15px;
+    height: 30px;
+    background: url("../images/hotel/tip-icon.png") no-repeat -160px -170px;
+    position: absolute;
+    left: 0;
+    top: 22px;
+}
+
+.cooperation .brand-right{
+    display: inline-block;
+    width: 15px;
+    height: 30px;
+    background: url("../images/hotel/tip-icon.png") no-repeat -175px -170px;
+    position: absolute;
+    right: 0;
+    top: 22px;
+}
+
+.cooperation .brand > ul li {
+    float: left;
+    margin-right: 24px;
+    transition: all 0.5s;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.cooperation .brand > ul li:hover {
+    top: -10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.service {
+    width: 1200px;
+    height: 70px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.service ul {
+    width: 1204px;
+    height: 40px;
+    padding: 15px 0;
+    border: 1px solid lightgrey;
+}
+
+.service ul li {
+    float:left;
+    padding: 0px 30px;
+    height: 40px;
+    width: 240px;
+    border-right: 1px solid lightgrey;
+    cursor: pointer;
+}
+
+.service ul li:last-child {
+    border: none;
+}
+
+.service li span {
+    float: left;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url("../images/login/bottom.png") no-repeat;
+}
+
+.service li p {
+    float: left;
+    margin-left: 5px;
+    width: 195px;
+    font-size: 13px;
+    color: #666;
+
+}
+
+.service li p  strong{
+    font-size: 18px;
+}
+
+.service li span.service-one {
+    background-position: -100px 0;
+}
+
+.service li span.service-two{
+    background-position: -150px 0;
+}
+
+.service li span.service-three{
+    background-position: -200px 0;
+}
+
+.service li span.service-four{
+    background-position: -250px 0;
+}
+
+
+.foot-bottom {
+    height: 300px;
+    background: #2d2d2d;
+    position: relative;
+    font-family: "微软雅黑";
+}
+
+.foot-bottom > div {
+    position: absolute;
+    width: 470px;
+    left: 50%;
+    margin-left: -235px;
+    text-align: center;
+    color: #fff;
+}
+
+
+.foot-bottom-one span,
+.foot-bottom-three span  {
+    display: inline-block;
+    width: 1px;
+    height: 80px;
+    position: absolute;
+    background: #999999;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);;
+}
+
+.foot-bottom-one span {
+    right: 200px;
+}
+
+.foot-bottom-two {
+    top: 80px;
+}
+
+.foot-bottom-two p:nth-child(1) {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.foot-bottom-two p:nth-child(1) span {
+    font-size: 30px;
+    color: #4ab344;
+}
+
+.foot-bottom-three {
+    top: 150px;
+}
+
+.foot-bottom-three span{
+    left: 137px;
+}
+
+.foot-bottom-four {
+    bottom: 10px;
+}
+
+.foot-bottom-four p {
+    text-align: center;
+    color: #999999;
+}
+
+.foot-bottom-four p a {
+    color: #999999;
+    text-decoration: underline;
+}
+
+.foot-bottom-four p a:hover {
+    color: red;
+}
+
+
